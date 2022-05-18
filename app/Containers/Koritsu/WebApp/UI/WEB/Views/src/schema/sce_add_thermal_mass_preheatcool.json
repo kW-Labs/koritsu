@@ -1,0 +1,68 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_add_thermal_mass_preheatcool",
+  "name": "sce_add_thermal_mass_preheat_cool",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_add_thermal_mass_preheatcool",
+  "uid": "01a8f7b3-c5d7-4e07-9842-b2317319eaf7",
+  "uuid": "{01a8f7b3-c5d7-4e07-9842-b2317319eaf7}",
+  "version_id": "3099d979-3245-49fe-a72e-4f6ecb2b8199",
+  "version_uuid": "{3099d979-3245-49fe-a72e-4f6ecb2b8199}",
+  "version_modified": "20220427T033906Z",
+  "xml_checksum": "5FF23FE2",
+  "display_name": "SCE Add Thermal Mass Preheat Cool",
+  "class_name": "SCEAddThermalMassPreheatCool",
+  "description": "This measure adjusts building thermal mass and cooling and heating schedules by a user specified number of degrees and time period.",
+  "modeler_description": "HVAC operation schedule will also be changed if the start time of the pre-cooling/heating is earlier than the default start value. An optional integer input is applied to each zones’ thermal capacitance, effectively modifying the mass of material in the building’s conditioned air volume. ",
+  "tags": [
+    "HVAC.HVAC Controls"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "cool_temp_shift",
+      "display_name": "Precool Temperature Adjustment",
+      "description": "Number of degrees Farenheight to offset the existing cooling setback temperature for pre-cooling.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 3.0
+    },
+    {
+      "name": "heat_temp_shift",
+      "display_name": "Preheat Temperature Adjustment",
+      "description": "Number of degrees Farenheight to ofset the existing heating setback temperature for pre-heating.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 2.0
+    },
+    {
+      "name": "start_hour_shift",
+      "display_name": "HVAC Operation Start Time Shift",
+      "description": "Enter number of hours to advance the HVAC system start time via thermostat schedule adjustment.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 1.0,
+      "min": -4.0,
+      "max": 4.0
+    },
+    {
+      "name": "tcap",
+      "display_name": "Thermal Capacitance Multiplier",
+      "description": "This value adjusts the effective thermal storage capacity of the zones in the model, approximating and increase/decrease in thermal mass. Values above 1.0 will increase capacitance; values from 0-1 will decrease it.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 1.0
+    }
+  ]
+}

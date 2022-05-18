@@ -1,0 +1,20 @@
+{ "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "id": "create_typical_building_from_model",
+  "properties": {
+    "system_type": { "type": "string" },
+    "hvac_delivery_type": { "type": "string" },
+    "htg_src": { "type": "string" },
+    "clg_src": { "type": "string" },
+    "swh_src": { "type": "string" },
+    "kitchen_makeup": { "type": "string" },
+    "onsite_parking_fraction": { "type": "string" },
+    "modify_wkdy_op_hrs": { "type": "string" },
+    "wkdy_op_hrs_start_time": { "type": "string" },
+    "wkdy_op_hrs_duration": { "type": "string" },
+    "modify_wknd_op_hrs": { "type": "string" },
+    "wknd_op_hrs_start_time": { "type": "string" },
+    "wknd_op_hrs_duration": { "type": "string" },
+    "unmet_hours_tolerance": { "type": "string" }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_dhw_with_heat_pump_water_heater",
+  "name": "sce_replace_existing_dhw_with_heat_pump_water_heater",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_dhw_with_heat_pump_water_heater",
+  "uid": "2fdfe64c-cb7e-44a4-9292-f998132f0892",
+  "uuid": "{2fdfe64c-cb7e-44a4-9292-f998132f0892}",
+  "version_id": "2c6c45b2-0331-4475-892b-7c6066461ccc",
+  "version_uuid": "{2c6c45b2-0331-4475-892b-7c6066461ccc}",
+  "version_modified": "20220427T033811Z",
+  "xml_checksum": "F33F6E26",
+  "display_name": "SCE Replace Existing DHW with Heat Pump Water Heater",
+  "class_name": "SCEReplaceExistingDHWWithHeatPumpWaterHeater",
+  "description": "Removes the existing domestic hot water heating source and replaces it with a heat pump water heater",
+  "modeler_description": "The measure replaces the DHW heating source, without impacting DHW demand or temperatures. System performance will be set by Rated COP input; system curves will be 'typical' (default) and not guaranteed to reflect a particular model. The added HPWH will be auto sized by the simulation to provide the capacity needed to meet building demand. This measure may be used to simulate exclusively heat pump heated tanks, exclusively electrically heated tanks, or a combination of both.",
+  "tags": [
+    "Service Water Heating.Water Heating"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "vol",
+      "display_name": "Set hot water tank volume [gal]",
+      "description": "Enter 0 to use existing tank volume(s). Values less than 5 are treated as sizing multipliers.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "units": "gal",
+      "default_value": 0.0,
+      "min": 0.0
+    },
+    {
+      "name": "cap",
+      "display_name": "Set heat pump heating capacity. An input of zero will use the existing water heater capacity.",
+      "description": "[kW]",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 0.0,
+      "min": 0.0
+    },
+    {
+      "name": "cop",
+      "display_name": "Set heat pump rated COP (heating)",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 3.2,
+      "min": 0
+    },
+    {
+      "name": "osz_factor",
+      "display_name": "Oversizing Factor",
+      "description": "Sets a multiplier on autosized tank volume and heating capacity. Decimal values > 1.0 accepted.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 1.0,
+      "min": 0.0
+    },
+    {
+      "name": "bu_cap",
+      "display_name": "Set electric backup heating capacity. An input of zero will use existing heater capacity.",
+      "description": "[kW]",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 23.4,
+      "min": 0.0
+    },
+    {
+      "name": "flex0",
+      "display_name": "Daily Flex Period 1:",
+      "description": "Applies every day in the full run period.",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "None",
+      "choice_values": [
+        "None",
+        "Charge - Heat Pump",
+        "Charge - Electric",
+        "Float"
+      ],
+      "choice_display_names": [
+        "None",
+        "Charge - Heat Pump",
+        "Charge - Electric",
+        "Float"
+      ]
+    },
+    {
+      "name": "flex_hrs0",
+      "display_name": "Use 24-Hour Format",
+      "description": "",
+      "type": "String",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "HH:MM - HH:MM"
+    },
+    {
+      "name": "flex1",
+      "display_name": "Daily Flex Period 2:",
+      "description": "Applies every day in the full run period.",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "None",
+      "choice_values": [
+        "None",
+        "Charge - Heat Pump",
+        "Charge - Electric",
+        "Float"
+      ],
+      "choice_display_names": [
+        "None",
+        "Charge - Heat Pump",
+        "Charge - Electric",
+        "Float"
+      ]
+    },
+    {
+      "name": "flex_hrs1",
+      "display_name": "Use 24-Hour Format",
+      "description": "",
+      "type": "String",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "HH:MM - HH:MM"
+    },
+    {
+      "name": "flex2",
+      "display_name": "Daily Flex Period 3:",
+      "description": "Applies every day in the full run period.",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "None",
+      "choice_values": [
+        "None",
+        "Charge - Heat Pump",
+        "Charge - Electric",
+        "Float"
+      ],
+      "choice_display_names": [
+        "None",
+        "Charge - Heat Pump",
+        "Charge - Electric",
+        "Float"
+      ]
+    },
+    {
+      "name": "flex_hrs2",
+      "display_name": "Use 24-Hour Format",
+      "description": "",
+      "type": "String",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "HH:MM - HH:MM"
+    },
+    {
+      "name": "flex3",
+      "display_name": "Daily Flex Period 4:",
+      "description": "Applies every day in the full run period.",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "None",
+      "choice_values": [
+        "None",
+        "Charge - Heat Pump",
+        "Charge - Electric",
+        "Float"
+      ],
+      "choice_display_names": [
+        "None",
+        "Charge - Heat Pump",
+        "Charge - Electric",
+        "Float"
+      ]
+    },
+    {
+      "name": "flex_hrs3",
+      "display_name": "Use 24-Hour Format",
+      "description": "",
+      "type": "String",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "HH:MM - HH:MM"
+    },
+    {
+      "name": "max_temp",
+      "display_name": "Set maximum tank temperature",
+      "description": "[F]",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 160.0,
+      "min": 100.0,
+      "max": 212.0
+    },
+    {
+      "name": "min_temp",
+      "display_name": "Set minimum tank temperature during float",
+      "description": "[F]",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 120.0,
+      "min": 100.0
+    },
+    {
+      "name": "db_temp",
+      "display_name": "Set deadband temperature difference between heat pump and electric backup",
+      "description": "[F]",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 5.0,
+      "min": 0.0
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+ERROR Cannot find current Workflow Step
+INFO  Using OpenStudio Standards version 0.2.15 with template DEER 2015.
+INFO  Loading OpenStudio Standards data for DEER 2015
+INFO  OfS Shared Service Water Loop is used for SHW or refrigeration heat reclaim and will not be removed.
+INFO  Adding hot water loop.
+INFO  New low temperature hot water loop created.
+INFO  Adding PSZ-AC for Zone OfS Hall C end_b - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS Hall C  - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS Hall B  - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS Hall A end_b - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall B end_a - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall A end_a - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS Hall A  - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall A  - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS Hall B end_b - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall C end_a - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall B  - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall C  - Story Ground.
+WARN  WorkflowStepResult value called with undefined stepResult, returning 'Success'
+WARN  WorkflowStepResult value called with undefined stepResult, returning 'Success'
+ERROR Cannot find current Workflow Step
+INFO  Using OpenStudio Standards version 0.2.15 with template DEER 2015.
+INFO  Loading OpenStudio Standards data for DEER 2015
+INFO  OfS Shared Service Water Loop is used for SHW or refrigeration heat reclaim and will not be removed.
+INFO  Adding hot water loop.
+INFO  New low temperature hot water loop created.
+INFO  Adding chilled water loop.
+INFO  Adding VAV system for 12 zones.
+INFO  For 12 Zone VAV: VAV damper action was set to Dual Maximum control.
+INFO  Running simulation /home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_hvac_with_air_source_heat_pumps/tests/output/SR.
+INFO  Finished run.
+WARN  Using EnergyPlusVersion version 9.6.0 which should have 'Year' field, but it's always zero
+INFO  Started applying HVAC efficiency standards for DEER 2015 template.
+INFO  For 12 Zone VAV, ERV not required based on 14% OA flow, design supply air flow of 30309cfm, and climate zone CEC T224-CEC12.
+INFO  For 12 Zone VAV: non-integrated economizer per 6.5.1.3 exception a, DX VAV system.
+INFO  For 12 Zone VAV: VAV damper action was set to Dual Maximum control.
+INFO  For 12 Zone VAV Fan: Set fan curve coefficients to reflect control type of 'Multi Zone VAV with discharge dampers'.
+INFO  For DEER 2015 CEC T224-CEC12:  12 Zone VAV: DCV is not required for any system.
+INFO  For 12 Zone VAV: Optimum start is required since design flow rate of 30309 cfm exceeds the limit of 10000 cfm.
+INFO  For 12 Zone VAV: Optimum start control enabled.
+INFO  For 12 Zone VAV Fan: motor nameplate = 30HP, motor eff = 94.1%.
+INFO  For Chilled Water Loop Pump: brake hp = 3.73HP, motor nameplate = 5HP, motor eff = 91.7%.
+INFO  For Hot Water Loop Pump: brake hp = 2.44HP, motor nameplate = 3HP, motor eff = 89.5%.
+INFO  For OfS Shared Service Water Loop Water Mains Pressure Driven: brake hp = 0.0HP, motor nameplate = 1.0HP, motor eff = 86.5%.
+WARN  Find object search criteria returned 2 results, the first one will be returned. Called from /home/edr/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/openstudio-standards-0.2.15/lib/openstudio-standards/standards/Standards.ChillerElectricEIR.rb:120:in `chiller_electric_eir_apply_efficiency_and_curves'. 
+ Search criteria: 
+ {"template"=>"DEER 2015", "cooling_type"=>"AirCooled"}, capacity = 80.94278169420345 
+  All results: 
+ {"template"=>"DEER 2015", "cooling_type"=>"AirCooled", "condenser_type"=>"WithCondenser", "compressor_type"=>"Rotary Screw", "absorption_type"=>nil, "variable_speed_drive"=>0, "minimum_capacity"=>0.0, "maximum_capacity"=>149.99, "start_date"=>"1919-09-09T00:00:00+00:00", "end_date"=>"2999-09-09T00:00:00+00:00", "minimum_full_load_efficiency"=>1.25496758, "minimum_integrated_part_load_value"=>0.96, "capft"=>"ScrewAir-Cap-fCHWT&DBT", "eirft"=>"ScrewAir-EIR-fCHWT&DBT", "eirfplr"=>"ScrewRemote-EIR-fPLR-2Comp/Ckt", "notes"=>"From CA Title 24 2013"}
+{"template"=>"DEER 2015", "cooling_type"=>"AirCooled", "condenser_type"=>"WithoutCondenser", "compressor_type"=>"Rotary Screw", "absorption_type"=>nil, "variable_speed_drive"=>0, "minimum_capacity"=>0.0, "maximum_capacity"=>149.99, "start_date"=>"1919-09-09T00:00:00+00:00", "end_date"=>"2999-09-09T00:00:00+00:00", "minimum_full_load_efficiency"=>1.25496758, "minimum_integrated_part_load_value"=>0.96, "capft"=>"ScrewAir-Cap-fCHWT&DBT", "eirft"=>"ScrewAir-EIR-fCHWT&DBT", "eirfplr"=>"ScrewRemote-EIR-fPLR-2Comp/Ckt", "notes"=>"From CA Title 24 2013"}
+INFO  For DEER 2015: DEER 2015    Chiller 0 81tons 1.3kW/ton: AirCooled   Capacity = 81tons; COP = 2.8 (1.3kW/ton)
+WARN  For 52gal Electricity Water Heater - 52kBtu/hr, cannot find water heater properties, cannot apply efficiency standard.
+INFO  Finished applying HVAC efficiency standards for DEER 2015 template.
+WARN  WorkflowStepResult value called with undefined stepResult, returning 'Success'
+WARN  WorkflowStepResult value called with undefined stepResult, returning 'Success'
+ERROR Cannot find current Workflow Step
+ERROR Cannot find current Workflow Step
+INFO  Using OpenStudio Standards version 0.2.15 with template DEER 2015.
+INFO  Loading OpenStudio Standards data for DEER 2015
+INFO  OfS Shared Service Water Loop is used for SHW or refrigeration heat reclaim and will not be removed.
+INFO  Adding hot water loop.
+INFO  New low temperature hot water loop created.
+INFO  Adding chilled water loop.
+INFO  Adding DOAS system for 12 zones.
+INFO  Adding fan coil for Zone OfS Hall C end_b - Story Ground.
+INFO  Adding fan coil for Zone OfS Hall C  - Story Ground.
+INFO  Adding fan coil for Zone OfS Hall B  - Story Ground.
+INFO  Adding fan coil for Zone OfS Hall A end_b - Story Ground.
+INFO  Adding fan coil for Zone OfS OfficeSmall B end_a - Story Ground.
+INFO  Adding fan coil for Zone OfS OfficeSmall A end_a - Story Ground.
+INFO  Adding fan coil for Zone OfS Hall A  - Story Ground.
+INFO  Adding fan coil for Zone OfS OfficeSmall A  - Story Ground.
+INFO  Adding fan coil for Zone OfS Hall B end_b - Story Ground.
+INFO  Adding fan coil for Zone OfS OfficeSmall C end_a - Story Ground.
+INFO  Adding fan coil for Zone OfS OfficeSmall B  - Story Ground.
+INFO  Adding fan coil for Zone OfS OfficeSmall C  - Story Ground.
+INFO  Running simulation /home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_hvac_with_air_source_heat_pumps/tests/output/SR.
+INFO  Finished run.
+WARN  Using EnergyPlusVersion version 9.6.0 which should have 'Year' field, but it's always zero
+INFO  Started applying HVAC efficiency standards for DEER 2015 template.
+INFO  For 12 Zone DOAS, ERV not required based on 100% OA flow, design supply air flow of 4259cfm, and climate zone CEC T224-CEC12.
+INFO  For DEER 2015 CEC T224-CEC12:  12 Zone DOAS: DCV is not required for any system.
+INFO  For 12 Zone DOAS: Optimum start is not required since design flow rate of 4259 cfm is below the limit of 10000 cfm.
+INFO  For DOAS Exhaust Fan: motor nameplate = 2HP, motor eff = 89.5%.
+INFO  For DOAS Supply Fan: motor nameplate = 3HP, motor eff = 89.5%.
+INFO  For Zone OfS Hall A  - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS Hall A end_b - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS Hall B  - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS Hall B end_b - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS Hall C  - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS Hall C end_b - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall A  - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall A end_a - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall B  - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall B end_a - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall C  - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall C end_a - Story Ground Fan Coil fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Chilled Water Loop Pump: brake hp = 4.82HP, motor nameplate = 5HP, motor eff = 91.7%.
+INFO  For Hot Water Loop Pump: brake hp = 1.75HP, motor nameplate = 2HP, motor eff = 89.5%.
+INFO  For OfS Shared Service Water Loop Water Mains Pressure Driven: brake hp = 0.0HP, motor nameplate = 1.0HP, motor eff = 86.5%.
+WARN  Find object search criteria returned 2 results, the first one will be returned. Called from /home/edr/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/openstudio-standards-0.2.15/lib/openstudio-standards/standards/Standards.ChillerElectricEIR.rb:120:in `chiller_electric_eir_apply_efficiency_and_curves'. 
+ Search criteria: 
+ {"template"=>"DEER 2015", "cooling_type"=>"AirCooled"}, capacity = 104.60564537692886 
+  All results: 
+ {"template"=>"DEER 2015", "cooling_type"=>"AirCooled", "condenser_type"=>"WithCondenser", "compressor_type"=>"Rotary Screw", "absorption_type"=>nil, "variable_speed_drive"=>0, "minimum_capacity"=>0.0, "maximum_capacity"=>149.99, "start_date"=>"1919-09-09T00:00:00+00:00", "end_date"=>"2999-09-09T00:00:00+00:00", "minimum_full_load_efficiency"=>1.25496758, "minimum_integrated_part_load_value"=>0.96, "capft"=>"ScrewAir-Cap-fCHWT&DBT", "eirft"=>"ScrewAir-EIR-fCHWT&DBT", "eirfplr"=>"ScrewRemote-EIR-fPLR-2Comp/Ckt", "notes"=>"From CA Title 24 2013"}
+{"template"=>"DEER 2015", "cooling_type"=>"AirCooled", "condenser_type"=>"WithoutCondenser", "compressor_type"=>"Rotary Screw", "absorption_type"=>nil, "variable_speed_drive"=>0, "minimum_capacity"=>0.0, "maximum_capacity"=>149.99, "start_date"=>"1919-09-09T00:00:00+00:00", "end_date"=>"2999-09-09T00:00:00+00:00", "minimum_full_load_efficiency"=>1.25496758, "minimum_integrated_part_load_value"=>0.96, "capft"=>"ScrewAir-Cap-fCHWT&DBT", "eirft"=>"ScrewAir-EIR-fCHWT&DBT", "eirfplr"=>"ScrewRemote-EIR-fPLR-2Comp/Ckt", "notes"=>"From CA Title 24 2013"}
+INFO  For DEER 2015: DEER 2015    Chiller 0 105tons 1.3kW/ton: AirCooled   Capacity = 105tons; COP = 2.8 (1.3kW/ton)
+WARN  For 52gal Electricity Water Heater - 52kBtu/hr, cannot find water heater properties, cannot apply efficiency standard.
+INFO  Finished applying HVAC efficiency standards for DEER 2015 template.
+WARN  WorkflowStepResult value called with undefined stepResult, returning 'Success'
+WARN  WorkflowStepResult value called with undefined stepResult, returning 'Success'
+ERROR Cannot find current Workflow Step
+INFO  Using OpenStudio Standards version 0.2.15 with template DEER 2015.
+INFO  Loading OpenStudio Standards data for DEER 2015
+INFO  OfS Shared Service Water Loop is used for SHW or refrigeration heat reclaim and will not be removed.
+INFO  Adding PSZ-AC for Zone OfS Hall C end_b - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS Hall C  - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS Hall B  - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS Hall A end_b - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall B end_a - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall A end_a - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS Hall A  - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall A  - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS Hall B end_b - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall C end_a - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall B  - Story Ground.
+INFO  Adding PSZ-AC for Zone OfS OfficeSmall C  - Story Ground.
+INFO  Running simulation /home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_hvac_with_air_source_heat_pumps/tests/output/SR.
+INFO  Finished run.
+WARN  Using EnergyPlusVersion version 9.6.0 which should have 'Year' field, but it's always zero
+INFO  Started applying HVAC efficiency standards for DEER 2015 template.
+INFO  For Zone OfS Hall A  - Story Ground PSZ-HP, ERV not required based on 5% OA flow, design supply air flow of 1334cfm, and climate zone CEC T224-CEC12.
+INFO  For Zone OfS Hall A  - Story Ground PSZ-HP: non-integrated economizer per 6.5.1.3 exception b, DX system less than 65000Btu/hr.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS Hall A  - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS Hall A  - Story Ground PSZ-HP: Optimum start is not required since design flow rate of 1334 cfm is below the limit of 10000 cfm.
+INFO  For Zone OfS Hall A  - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS Hall A end_b - Story Ground PSZ-HP, ERV not required based on 3% OA flow, design supply air flow of 398cfm, and climate zone CEC T224-CEC12.
+INFO  For Zone OfS Hall A end_b - Story Ground PSZ-HP: non-integrated economizer per 6.5.1.3 exception b, DX system less than 65000Btu/hr.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS Hall A end_b - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS Hall A end_b - Story Ground PSZ-HP: Optimum start is not required since design flow rate of 398 cfm is below the limit of 10000 cfm.
+INFO  For Zone OfS Hall A end_b - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS Hall B  - Story Ground PSZ-HP, ERV not required based on 25% OA flow, design supply air flow of 2472cfm, and climate zone CEC T224-CEC12.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS Hall B  - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS Hall B  - Story Ground PSZ-HP: Optimum start is not required since design flow rate of 2472 cfm is below the limit of 10000 cfm.
+INFO  For Zone OfS Hall B  - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS Hall B end_b - Story Ground PSZ-HP, ERV not required based on 3% OA flow, design supply air flow of 2970cfm, and climate zone CEC T224-CEC12.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS Hall B end_b - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS Hall B end_b - Story Ground PSZ-HP: Optimum start is not required since design flow rate of 2970 cfm is below the limit of 10000 cfm.
+INFO  For Zone OfS Hall B end_b - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS Hall C  - Story Ground PSZ-HP, ERV not required based on 9% OA flow, design supply air flow of 726cfm, and climate zone CEC T224-CEC12.
+INFO  For Zone OfS Hall C  - Story Ground PSZ-HP: non-integrated economizer per 6.5.1.3 exception b, DX system less than 65000Btu/hr.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS Hall C  - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS Hall C  - Story Ground PSZ-HP: Optimum start is not required since design flow rate of 726 cfm is below the limit of 10000 cfm.
+INFO  For Zone OfS Hall C  - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS Hall C end_b - Story Ground PSZ-HP, ERV not required based on 3% OA flow, design supply air flow of 427cfm, and climate zone CEC T224-CEC12.
+INFO  For Zone OfS Hall C end_b - Story Ground PSZ-HP: non-integrated economizer per 6.5.1.3 exception b, DX system less than 65000Btu/hr.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS Hall C end_b - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS Hall C end_b - Story Ground PSZ-HP: Optimum start is not required since design flow rate of 427 cfm is below the limit of 10000 cfm.
+INFO  For Zone OfS Hall C end_b - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS OfficeSmall A  - Story Ground PSZ-HP, ERV not required based on 7% OA flow, design supply air flow of 4228cfm, and climate zone CEC T224-CEC12.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS OfficeSmall A  - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS OfficeSmall A  - Story Ground PSZ-HP: Optimum start is not required since design flow rate of 4228 cfm is below the limit of 10000 cfm.
+INFO  For Zone OfS OfficeSmall A  - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS OfficeSmall A end_a - Story Ground PSZ-HP, ERV not required based on 3% OA flow, design supply air flow of 628cfm, and climate zone CEC T224-CEC12.
+INFO  For Zone OfS OfficeSmall A end_a - Story Ground PSZ-HP: non-integrated economizer per 6.5.1.3 exception b, DX system less than 65000Btu/hr.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS OfficeSmall A end_a - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS OfficeSmall A end_a - Story Ground PSZ-HP: Optimum start is not required since design flow rate of 628 cfm is below the limit of 10000 cfm.
+INFO  For Zone OfS OfficeSmall A end_a - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS OfficeSmall B  - Story Ground PSZ-HP, ERV not required based on 16% OA flow, design supply air flow of 16236cfm, and climate zone CEC T224-CEC12.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS OfficeSmall B  - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS OfficeSmall B  - Story Ground PSZ-HP: Optimum start is required since design flow rate of 16236 cfm exceeds the limit of 10000 cfm.
+INFO  For Zone OfS OfficeSmall B  - Story Ground PSZ-HP: Optimum start control enabled.
+INFO  For Zone OfS OfficeSmall B  - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS OfficeSmall B end_a - Story Ground PSZ-HP, ERV not required based on 4% OA flow, design supply air flow of 4212cfm, and climate zone CEC T224-CEC12.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS OfficeSmall B end_a - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS OfficeSmall B end_a - Story Ground PSZ-HP: Optimum start is not required since design flow rate of 4212 cfm is below the limit of 10000 cfm.
+INFO  For Zone OfS OfficeSmall B end_a - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS OfficeSmall C  - Story Ground PSZ-HP, ERV not required based on 10% OA flow, design supply air flow of 2850cfm, and climate zone CEC T224-CEC12.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS OfficeSmall C  - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS OfficeSmall C  - Story Ground PSZ-HP: Optimum start is not required since design flow rate of 2850 cfm is below the limit of 10000 cfm.
+INFO  For Zone OfS OfficeSmall C  - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS OfficeSmall C end_a - Story Ground PSZ-HP, ERV not required based on 4% OA flow, design supply air flow of 564cfm, and climate zone CEC T224-CEC12.
+INFO  For Zone OfS OfficeSmall C end_a - Story Ground PSZ-HP: non-integrated economizer per 6.5.1.3 exception b, DX system less than 65000Btu/hr.
+INFO  For DEER 2015 CEC T224-CEC12:  Zone OfS OfficeSmall C end_a - Story Ground PSZ-HP: DCV is not required for any system.
+INFO  For Zone OfS OfficeSmall C end_a - Story Ground PSZ-HP: Optimum start is not required since design flow rate of 564 cfm is below the limit of 10000 cfm.
+INFO  For Zone OfS OfficeSmall C end_a - Story Ground PSZ-HP: No special economizer controls were modeled.
+INFO  For Zone OfS Hall A  - Story Ground PSZ-HP Fan: motor nameplate = 1.0HP, motor eff = 86.5%.
+INFO  For Zone OfS Hall A end_b - Story Ground PSZ-HP Fan: motor nameplate = 1.0HP, motor eff = 86.5%.
+INFO  For Zone OfS Hall B  - Story Ground PSZ-HP Fan: motor nameplate = 2HP, motor eff = 89.5%.
+INFO  For Zone OfS Hall B end_b - Story Ground PSZ-HP Fan: motor nameplate = 2HP, motor eff = 89.5%.
+INFO  For Zone OfS Hall C  - Story Ground PSZ-HP Fan: motor nameplate = 1.0HP, motor eff = 86.5%.
+INFO  For Zone OfS Hall C end_b - Story Ground PSZ-HP Fan: motor nameplate = 1.0HP, motor eff = 86.5%.
+INFO  For Zone OfS OfficeSmall A  - Story Ground PSZ-HP Fan: motor nameplate = 3HP, motor eff = 89.5%.
+INFO  For Zone OfS OfficeSmall A end_a - Story Ground PSZ-HP Fan: motor nameplate = 1.0HP, motor eff = 86.5%.
+INFO  For Zone OfS OfficeSmall B  - Story Ground PSZ-HP Fan: motor nameplate = 15HP, motor eff = 93.0%.
+INFO  For Zone OfS OfficeSmall B end_a - Story Ground PSZ-HP Fan: motor nameplate = 3HP, motor eff = 89.5%.
+INFO  For Zone OfS OfficeSmall C  - Story Ground PSZ-HP Fan: motor nameplate = 2HP, motor eff = 89.5%.
+INFO  For Zone OfS OfficeSmall C end_a - Story Ground PSZ-HP Fan: motor nameplate = 1.0HP, motor eff = 86.5%.
+INFO  For OfS Shared Service Water Loop Water Mains Pressure Driven: brake hp = 0.0HP, motor nameplate = 1.0HP, motor eff = 86.5%.
+INFO  For DEER 2015: Zone OfS Hall A  - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 53kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS Hall A  - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 53kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS Hall A end_b - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 16kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS Hall A end_b - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 16kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS Hall B  - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 99kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS Hall B  - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 99kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS Hall B end_b - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 119kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS Hall B end_b - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 119kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS Hall C  - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 29kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS Hall C  - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 29kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS Hall C end_b - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 17kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS Hall C end_b - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 17kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS OfficeSmall A  - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 169kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS OfficeSmall A  - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 169kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS OfficeSmall A end_a - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 25kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS OfficeSmall A end_a - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 25kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS OfficeSmall B  - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 649kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS OfficeSmall B  - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 649kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS OfficeSmall B end_a - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 168kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS OfficeSmall B end_a - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 168kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS OfficeSmall C  - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 114kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS OfficeSmall C  - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 114kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS OfficeSmall C end_a - Story Ground HP Htg Coil:  Single Package Cooling Capacity = 23kBtu/hr; COPH = 3.17
+INFO  For DEER 2015: Zone OfS OfficeSmall C end_a - Story Ground HP Htg Coil:   Single Package Cooling Capacity = 23kBtu/hr; EER = 11.1125
+INFO  For DEER 2015: Zone OfS Hall A  - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 53kBtu/hr; SEER = 14.0
+INFO  For DEER 2015: Zone OfS Hall A end_b - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 16kBtu/hr; SEER = 14.0
+INFO  For DEER 2015: Zone OfS Hall B  - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 99kBtu/hr; SEER = 14.0
+INFO  For DEER 2015: Zone OfS Hall B end_b - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 119kBtu/hr; SEER = 14.0
+INFO  For DEER 2015: Zone OfS Hall C  - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 29kBtu/hr; SEER = 14.0
+INFO  For DEER 2015: Zone OfS Hall C end_b - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 17kBtu/hr; SEER = 14.0
+INFO  For DEER 2015: Zone OfS OfficeSmall A  - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 169kBtu/hr; SEER = 14.0
+INFO  For DEER 2015: Zone OfS OfficeSmall A end_a - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 25kBtu/hr; SEER = 14.0
+INFO  For DEER 2015: Zone OfS OfficeSmall B  - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 649kBtu/hr; SEER = 14.0
+INFO  For DEER 2015: Zone OfS OfficeSmall B end_a - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 168kBtu/hr; SEER = 14.0
+INFO  For DEER 2015: Zone OfS OfficeSmall C  - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 114kBtu/hr; SEER = 14.0
+INFO  For DEER 2015: Zone OfS OfficeSmall C end_a - Story Ground PSZ-HP 1spd DX HP Clg Coil: AirCooled  Single Package Capacity = 23kBtu/hr; SEER = 14.0
+WARN  For 52gal Electricity Water Heater - 52kBtu/hr, cannot find water heater properties, cannot apply efficiency standard.
+INFO  Finished applying HVAC efficiency standards for DEER 2015 template.

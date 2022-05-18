@@ -1,0 +1,131 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_hvac_with_air_source_heat_pumps",
+  "name": "sce_replace_existing_hvac_with_air_source_heat_pumps",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_hvac_with_air_source_heat_pumps",
+  "uid": "bf8fce70-861e-4c66-8ce2-3303a6df878e",
+  "uuid": "{bf8fce70-861e-4c66-8ce2-3303a6df878e}",
+  "version_id": "4ae44909-50cd-4d30-adaf-4311cd3e7aed",
+  "version_uuid": "{4ae44909-50cd-4d30-adaf-4311cd3e7aed}",
+  "version_modified": "20220427T033819Z",
+  "xml_checksum": "740F4BDA",
+  "display_name": "SCE Replace Existing HVAC with Air Source Heat Pumps",
+  "class_name": "SCEReplaceExistingHVACWithAirSourceHeatPumps",
+  "description": "Replaces existing building HVAC systems with one of a selection of air-source heat pump systems. Heat pump rated heating COP will be a user input. Cooling and primary equipment efficiency will be set according to DEER standards for the selected DEER vintage. ",
+  "modeler_description": "The measure will remove all exisiting HVAC equipment and replace them with the user-selected system type. Packaged single-zone systems will be applied to each zone; DOAS systems will create DOAS per floor, with FCUs per zone. One AHU will be created per floor with one reheat terminal per zone. Hydronic systems will receive one heating and one cooling plant loop per building. \nSystem capacity will be auto-sized by the simulation program. Cooling efficiency will be set per DEER vintage, heat pump efficiency will be user-enterable, with one value applied to all heat pump heating equipment added.  \n",
+  "tags": [
+    "HVAC.Whole System"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    },
+    {
+      "name": "Intended Software Tool",
+      "display_name": "Intended Software Tool",
+      "value": "Apply Measure Now"
+    },
+    {
+      "name": "Intended Software Tool",
+      "display_name": "Intended Software Tool",
+      "value": "OpenStudio Application"
+    },
+    {
+      "name": "Intended Software Tool",
+      "display_name": "Intended Software Tool",
+      "value": "Parametric Analysis Tool"
+    },
+    {
+      "name": "Intended Use Case",
+      "display_name": "Intended Use Case",
+      "value": "New Construction EE"
+    },
+    {
+      "name": "Intended Use Case",
+      "display_name": "Intended Use Case",
+      "value": "Retrofit EE"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "template",
+      "display_name": "Target DEER Standard",
+      "description": "",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "DEER 2020",
+      "choice_values": [
+        "DEER Pre-1975",
+        "DEER 1985",
+        "DEER 1996",
+        "DEER 2003",
+        "DEER 2007",
+        "DEER 2011",
+        "DEER 2014",
+        "DEER 2015",
+        "DEER 2017",
+        "DEER 2020"
+      ],
+      "choice_display_names": [
+        "DEER Pre-1975",
+        "DEER 1985",
+        "DEER 1996",
+        "DEER 2003",
+        "DEER 2007",
+        "DEER 2011",
+        "DEER 2014",
+        "DEER 2015",
+        "DEER 2017",
+        "DEER 2020"
+      ]
+    },
+    {
+      "name": "system_type",
+      "display_name": "HVAC System Type",
+      "description": "",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "Packaged Single-Zone Heat Pumps (i.e. split systems)",
+      "choice_values": [
+        "Packaged Single-Zone Heat Pumps (i.e. split systems)",
+        "Packaged Single-Zone AC with Hydronic Heating via Central Air-Water Heat Pump",
+        "DOAS with Fan Coil Units, CHW via Air-Cooled Chiller, Heating via Central Air-Water Heat Pump",
+        "VAV AHU, CHW via Air-Cooled Chiller, Heating and Reheat via Central Air-Water Heat Pump"
+      ],
+      "choice_display_names": [
+        "Packaged Single-Zone Heat Pumps (i.e. split systems)",
+        "Packaged Single-Zone AC with Hydronic Heating via Central Air-Water Heat Pump",
+        "DOAS with Fan Coil Units, CHW via Air-Cooled Chiller, Heating via Central Air-Water Heat Pump",
+        "VAV AHU, CHW via Air-Cooled Chiller, Heating and Reheat via Central Air-Water Heat Pump"
+      ]
+    },
+    {
+      "name": "cool_cop",
+      "display_name": "Heat Pump Cooling Rated COP",
+      "description": "This value will be applied to all zone-level or plant-level cooling equipment",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 3.0,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "heat_cop",
+      "display_name": "Heat Pump Heating Rated COP",
+      "description": "This value will be applied to all zone-level or plant-level heating equipment",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 3.0,
+      "min": 0.0,
+      "max": 6.0
+    }
+  ]
+}

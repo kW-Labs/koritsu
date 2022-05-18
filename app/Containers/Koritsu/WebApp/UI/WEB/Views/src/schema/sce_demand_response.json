@@ -1,0 +1,93 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_demand_response",
+  "name": "sce_demand_response",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_demand_response",
+  "uid": "789ee424-ddbe-4437-a9e2-de1d7343f41f",
+  "uuid": "{789ee424-ddbe-4437-a9e2-de1d7343f41f}",
+  "version_id": "459bfddf-d5b5-493e-bbee-5d4987ea8cff",
+  "version_uuid": "{459bfddf-d5b5-493e-bbee-5d4987ea8cff}",
+  "version_modified": "20220307T201012Z",
+  "xml_checksum": "0EB71C7A",
+  "display_name": "SCE Demand Response",
+  "class_name": "SCEDemandResponse",
+  "description": "This measure adds control logic to the model to reduce the peak electrical power draw (demand) from the utility. Demand is managed in this model by turning down the lights and equipment and increasing the cooling setpoints throughout the facility.",
+  "modeler_description": "The measure will create demand limiting objects that attempt to control electric equipment to the user-input target demand limit. The demand limiting control will attempt to limit facility demand to the target during the SCE TOU peak demand period defined in the SCE tariffs. Demand will be limited in priority order of exterior lights, interior lights, interior electric equipment, and HVAC thermostats. User will input the maximum limit fractions for each of the electric loads, and reset temperatures for the thermostats, which will be applied to all such loads and zones in the model.",
+  "tags": [
+    "Equipment.Equipment Controls"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "EnergyPlusMeasure"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "demand_target",
+      "display_name": "Target Demand Limit",
+      "description": "Demand response controls will adjust building loads to attempt to maintain this demand level (kW).",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 100.0,
+      "min": 0.0
+    },
+    {
+      "name": "ext_lt_lim_frac",
+      "display_name": "Exterior Lighting Maximum Limit Fraction",
+      "description": "Fraction of building's exterior lighting power to be limited in a Demand Response event (value from 0 - 1).",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 1.0,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "int_lt_lim_frac",
+      "display_name": "Interior Lighting Maximum Limit Fraction",
+      "description": "Fraction of building's interior lighting power to be limited in a Demand Response event (value from 0 - 1).",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 0.3,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "equip_lim_frac",
+      "display_name": "Electric Equipment Maximum Limit Fraction",
+      "description": "Fraction of building's electric equipment (plug and process load) power to be limited in a Demand Response event (value from 0 - 1).",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 0.5,
+      "min": 0.0,
+      "max": 1.0
+    },
+    {
+      "name": "max_heat_reset",
+      "display_name": "Minimum Temperature to Reset Thermostat Heating Setpoint",
+      "description": "During a Demand Response event, controls will attempt to meet demand limit by resetting thermostat setpoint temperature. This is the minimum temperature the heating setpoint will be allowed to be reset (F). An input of 0 will disallow setpoint adjustment for DR.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 65.0,
+      "min": 55.0
+    },
+    {
+      "name": "max_cool_reset",
+      "display_name": "Maximum Temperature to Reset Thermostat Cooling Setpoint",
+      "description": "During a Demand Response event, controls will attempt to meet demand limit by resetting thermostat setpoint temperature. This is the maximum temperature the cooling setpoint will be allowed to be reset (F). An input of 0 will disallow setpoint adjustment for DR.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 78.0,
+      "max": 90.0
+    }
+  ]
+}

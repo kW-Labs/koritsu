@@ -1,0 +1,55 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/.bundle/install/ruby/2.7.0/gems/openstudio-ee-0.4.0/lib/measures/IncreaseInsulationRValueForRoofsByPercentage",
+  "name": "increase_insulation_r_value_for_roofs_by_percentage",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/.bundle/install/ruby/2.7.0/gems/openstudio-ee-0.4.0/lib/measures/IncreaseInsulationRValueForRoofsByPercentage",
+  "uid": "807d3ebf-c89b-4b93-b400-110ca060b2bb",
+  "uuid": "{807d3ebf-c89b-4b93-b400-110ca060b2bb}",
+  "version_id": "e7151de6-0219-4d87-9c34-251107528662",
+  "version_uuid": "{e7151de6-0219-4d87-9c34-251107528662}",
+  "version_modified": "20211201T212134Z",
+  "xml_checksum": "EB1A0C08",
+  "display_name": "Increase R-value of Insulation for Roofs by a Specified Percentage.",
+  "class_name": "IncreaseInsulationRValueForRoofsByPercentage",
+  "description": "Increase the R value of the insulation layer in roof constructinons by a percentage.",
+  "modeler_description": "Insulation later is inferred by finding the existing layer with the highest thermal resistance.",
+  "tags": [
+    "Envelope.Opaque"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Function",
+      "display_name": "Measure Function",
+      "value": "Measure"
+    },
+    {
+      "name": "Requires EnergyPlus Results",
+      "display_name": "Requires EnergyPlus Results",
+      "value": false
+    },
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    },
+    {
+      "name": "Uses SketchUp API",
+      "display_name": "Uses SketchUp API",
+      "value": false
+    }
+  ],
+  "arguments": [
+    {
+      "name": "r_value",
+      "display_name": "Percentage Increase of R-value for Roof Insulation.",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 30.0,
+      "min": -100
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{ "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "id": "koritsu_run_report",
+  "properties": {
+    "run_name": { "type": "string" }
+  }
+}

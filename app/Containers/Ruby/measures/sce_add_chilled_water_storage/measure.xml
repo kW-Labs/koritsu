@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>sce_add_chilled_water_storage</name>
+  <uid>38a81e9d-e6b4-4a08-99a1-811b14cc5fec</uid>
+  <version_id>f94c89b8-98d3-4f1e-8d95-33b79146c05d</version_id>
+  <version_modified>20220427T033858Z</version_modified>
+  <xml_checksum>DC6E0CD2</xml_checksum>
+  <class_name>SCEAddChilledWaterStorage</class_name>
+  <display_name>SCE Add Chilled Water Storage</display_name>
+  <description>This measure adds a chilled water thermal energy storage tank to the model for the purpose load shifting.</description>
+  <modeler_description>The measure allows users attach chilled water thermal energy storage (CWTS) to an existing chilled water loop for the purpose of exploring load flexibility potential for a given building. The baseline chilled water loop will be split into a 'primary' and 'secondary' loop, with the primary loop contiaing the existing chiller (hardsized to maintain baseline sizing) on the supply side and a ThermalStorage:ChilledWater:Stratified on the demand side. The secondary loop contains the chilled water tank on the supply side and existing chilled water coils on the demand side. The chilled water tank is modeled as a vertical cylinder with minimal surface area for a given tank volume. Tank is assumed to be exposed to ambient conditions, with a surface U-value of 0.5 W/m^2*K</modeler_description>
+  <arguments>
+    <argument>
+      <name>tank_vol</name>
+      <display_name>Chilled Water Storage Tank Volume (ft^3)</display_name>
+      <description>Storage volume of chilled water tank in cubic feet.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>2000</default_value>
+    </argument>
+    <argument>
+      <name>stor_cap</name>
+      <display_name>Chilled Water Storage Cooling Capacity (tons)</display_name>
+      <description>Cooling capacity of chilled water thermal storage tank in tons</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>300</default_value>
+    </argument>
+    <argument>
+      <name>charge_hours</name>
+      <display_name>Battery Charge Hours</display_name>
+      <description>If Storage Control Mode = 'Scheduled', enter daily times for battery charging, using 24-hour format. Applies every day in the full run period.</description>
+      <type>String</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>HH:MM - HH:MM</default_value>
+    </argument>
+  </arguments>
+  <outputs />
+  <provenances />
+  <tags>
+    <tag>HVAC.Energy Recovery</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>ModelMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>LICENSE.md</filename>
+      <filetype>md</filetype>
+      <usage_type>license</usage_type>
+      <checksum>CD7F5672</checksum>
+    </file>
+    <file>
+      <filename>README.md.erb</filename>
+      <filetype>erb</filetype>
+      <usage_type>readmeerb</usage_type>
+      <checksum>F1C26127</checksum>
+    </file>
+    <file>
+      <filename>.gitkeep</filename>
+      <filetype>gitkeep</filetype>
+      <usage_type>doc</usage_type>
+      <checksum>00000000</checksum>
+    </file>
+    <file>
+      <filename>example_model.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>53D14E69</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>3.3.0</identifier>
+        <min_compatible>3.3.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>8E2BFB71</checksum>
+    </file>
+    <file>
+      <filename>sce_add_chilled_water_storage_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>F83EDDBF</checksum>
+    </file>
+    <file>
+      <filename>in.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>8A026CB9</checksum>
+    </file>
+    <file>
+      <filename>deer_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>2FDAF43D</checksum>
+    </file>
+    <file>
+      <filename>in.epw</filename>
+      <filetype>epw</filetype>
+      <usage_type>test</usage_type>
+      <checksum>2CDF73D4</checksum>
+    </file>
+    <file>
+      <filename>README.md</filename>
+      <filetype>md</filetype>
+      <usage_type>readme</usage_type>
+      <checksum>4C33BE20</checksum>
+    </file>
+  </files>
+</measure>

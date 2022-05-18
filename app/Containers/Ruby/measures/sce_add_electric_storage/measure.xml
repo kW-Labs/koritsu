@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>sce_add_electric_storage</name>
+  <uid>01ff48a4-01b5-476a-ad55-9ea13d848807</uid>
+  <version_id>69e8c08f-a61b-4c42-a61f-32e41aba47fd</version_id>
+  <version_modified>20220427T033749Z</version_modified>
+  <xml_checksum>0806DB2D</xml_checksum>
+  <class_name>SCEAddElectricStorage</class_name>
+  <display_name>SCE Add Electric Storage</display_name>
+  <description>Adds electric storage in the model and offers two methods of controlling storage charging and discharging: Facility Demand Leveling, or Scheduled Charge and Discharge</description>
+  <modeler_description>Adds simple electric storage in the model and offers two methods of controlling storage charging and discharging.
+    Method 1.) Facility Demand Leveling – Storage will attempt to control the facility’s power demand drawn from the utility service to a prescribed level. When facility demand is below the target level the storage acts as a load on the grid and is charged. When facility demand is above the target level the storage is discharged to the grid to maintain the demand target.
+    Method 2.) Scheduled Charging/Discharging Storage – Storage is scheduled to be charged and discharged according to specific charge and discharge schedules usually associated with time-of-day utility tariffs. User input will consist of daily start hour and end hour of charging and discharging periods.
+    </modeler_description>
+  <arguments>
+    <argument>
+      <name>stor_op</name>
+      <display_name>Battery Storage Control Mode</display_name>
+      <description>'Facility Demand Leveling' will attempt to control the facility's power demand dran from the utility service to a prescribed level. Scheduled will follow a user-input charging/discharging schedule.</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Facility Demand Leveling</default_value>
+      <choices>
+        <choice>
+          <value>Facility Demand Leveling</value>
+          <display_name>Facility Demand Leveling</display_name>
+        </choice>
+        <choice>
+          <value>Scheduled</value>
+          <display_name>Scheduled</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>demand_target</name>
+      <display_name>Utility Demand Target (kW)</display_name>
+      <description>If Storage Control Mode = 'Facility Demand Leveling', this sets the target facility demand for discharge control - battery will discharge to maintain this demand level.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>100</default_value>
+    </argument>
+    <argument>
+      <name>charge_hours</name>
+      <display_name>Battery Charge Hours</display_name>
+      <description>If Storage Control Mode = 'Scheduled', enter daily times for battery charging, using 24-hour format. Applies every day in the full run period.</description>
+      <type>String</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>HH:MM - HH:MM</default_value>
+    </argument>
+    <argument>
+      <name>stor_cap</name>
+      <display_name>Battery Storage Capacity (kWh)</display_name>
+      <description>Total energy storage capacity of battery. Default represents Tesla Powerwall 2.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>14</default_value>
+    </argument>
+    <argument>
+      <name>power</name>
+      <display_name>Battery Charge/Discharge Power (kW)</display_name>
+      <description>Maximum rate at which electrical power can be charged/discharged from the battery. Default represents Tesla Powerwall 2.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>5</default_value>
+    </argument>
+    <argument>
+      <name>tot_eff</name>
+      <display_name>Nominal 'round-trip' (charge and discharge) energetic efficiency.</display_name>
+      <description>Energetic efficiency from storing and drawing electricl energy from the battery. Values should be between 0.001 and 1.0. Model inputs for charing and discharging efficiency will be the square root of this total 'round-trip' value. Default value represents Tesla Powerwall 2.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>0.9</default_value>
+    </argument>
+  </arguments>
+  <outputs />
+  <provenances />
+  <tags>
+    <tag>Onsite Power Generation</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>ModelMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>LICENSE.md</filename>
+      <filetype>md</filetype>
+      <usage_type>license</usage_type>
+      <checksum>CD7F5672</checksum>
+    </file>
+    <file>
+      <filename>README.md.erb</filename>
+      <filetype>erb</filetype>
+      <usage_type>readmeerb</usage_type>
+      <checksum>F1C26127</checksum>
+    </file>
+    <file>
+      <filename>.gitkeep</filename>
+      <filetype>gitkeep</filetype>
+      <usage_type>doc</usage_type>
+      <checksum>00000000</checksum>
+    </file>
+    <file>
+      <filename>example_model.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>53D14E69</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>3.3.0</identifier>
+        <min_compatible>3.3.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>7451DD91</checksum>
+    </file>
+    <file>
+      <filename>sce_add_electric_storage_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>8EC5132D</checksum>
+    </file>
+    <file>
+      <filename>deer_model_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>B478590C</checksum>
+    </file>
+    <file>
+      <filename>README.md</filename>
+      <filetype>md</filetype>
+      <usage_type>readme</usage_type>
+      <checksum>62FC699F</checksum>
+    </file>
+  </files>
+</measure>

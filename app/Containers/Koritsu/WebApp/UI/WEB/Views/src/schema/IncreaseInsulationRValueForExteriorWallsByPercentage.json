@@ -1,0 +1,55 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/.bundle/install/ruby/2.7.0/gems/openstudio-ee-0.4.0/lib/measures/IncreaseInsulationRValueForExteriorWallsByPercentage",
+  "name": "increase_insulation_r_value_for_exterior_walls_by_percentage",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/.bundle/install/ruby/2.7.0/gems/openstudio-ee-0.4.0/lib/measures/IncreaseInsulationRValueForExteriorWallsByPercentage",
+  "uid": "7508c563-22bd-49f4-b646-aac69b02a82d",
+  "uuid": "{7508c563-22bd-49f4-b646-aac69b02a82d}",
+  "version_id": "bdc8c4c8-2716-4db3-b7a4-9b218b6b96b1",
+  "version_uuid": "{bdc8c4c8-2716-4db3-b7a4-9b218b6b96b1}",
+  "version_modified": "20211201T212115Z",
+  "xml_checksum": "EB1A0C08",
+  "display_name": "Increase R-value of Insulation for Exterior Walls By a Specified Percentage",
+  "class_name": "IncreaseInsulationRValueForExteriorWallsByPercentage",
+  "description": "Increase the R value of the insulation layer in wall constructinons by a percentage.",
+  "modeler_description": "Insulation later is inferred by finding the existing layer with the highest thermal resistance.",
+  "tags": [
+    "Envelope.Opaque"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Function",
+      "display_name": "Measure Function",
+      "value": "Measure"
+    },
+    {
+      "name": "Requires EnergyPlus Results",
+      "display_name": "Requires EnergyPlus Results",
+      "value": false
+    },
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    },
+    {
+      "name": "Uses SketchUp API",
+      "display_name": "Uses SketchUp API",
+      "value": false
+    }
+  ],
+  "arguments": [
+    {
+      "name": "r_value",
+      "display_name": "Percentage Increase of R-value for Exterior Wall Insulation.",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 30.0,
+      "min": -100
+    }
+  ]
+}

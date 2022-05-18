@@ -1,0 +1,71 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/.bundle/install/ruby/2.7.0/gems/openstudio-ee-0.4.0/lib/measures/EnableEconomizerControl",
+  "name": "enable_economizer_control",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/.bundle/install/ruby/2.7.0/gems/openstudio-ee-0.4.0/lib/measures/EnableEconomizerControl",
+  "uid": "f8cc920d-8ae3-411a-922f-e6fed3223c4d",
+  "uuid": "{f8cc920d-8ae3-411a-922f-e6fed3223c4d}",
+  "version_id": "f96b43a6-09f3-4ca8-b010-7525ec03aec8",
+  "version_uuid": "{f96b43a6-09f3-4ca8-b010-7525ec03aec8}",
+  "version_modified": "20211201T212135Z",
+  "xml_checksum": "ECE70A70",
+  "display_name": "Enable Economizer Control",
+  "class_name": "EnableEconomizerControl",
+  "description": "There is currently not a functioning air side economizer enabled in the building. Air side economizers use cold outside air to either assist the mechanical cooling system, or if the air is cold enough, provide all of the cooling for a facility.\n\n\n\n\n\n\n\n\n\nIn order for an air side economizer to function properly, all of the outside air damper actuators need to have modulating capabilities. In addition to that, new control sequences need to be written into the building automation control system to enable the air-side economizer when outside air temperatures are below 60?F-65?F and the interior space temperatures are calling for cooling.\n\n\n\n\n\n\n\n\n\nThe building would realize the following operational benefits by utilizing an air-side economizer:\n\n\n\n\n    -Reduction in cooling system energy use\n\n\n\n\n    -Reduction in mechanical cooling system run time\n\n\n\n\n    -Possible improvement in indoor air quality\n\n\n\n\n  ",
+  "modeler_description": "This measure will enable economizer control for one or all of the air loops in the building. The choice list will have the following choices: No Economizer, Fixed Dry Bulb, Fixed Enthalpy, Differential Dry Bulb, Differential Enthalpy, Fixed Dew Point and Dry Bulb, Differential Dew Point and Dry Bulb, and Electronic Enthalpy. The default choice for each system will be the initial system condition. The measure will also have optional user argument fields for Economizer Maximum Limit Dry-Bulb Temperature, Economizer Maximum Limit Enthalpy, Economizer Maximum Limit Dewpoint Temperature, Economizer Minimum Limit Dry-Bulb Temperature. These user arguments get applied to every system in the project.\n\n\n\n\n\n\n\n\n\nIf the HVAC system does not have an OS:AirLoopHVAC:OutdoorAirSystem, then the runner sends an info message to the user that the model was not changed.\n\n\n\n\n\n\n\n\n\nThe cost arguments are user arguments that start with a default of $0.\n\n\n\n\n  ",
+  "tags": [
+    "HVAC.Ventilation"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    },
+    {
+      "name": "Uses SketchUp API",
+      "display_name": "Uses SketchUp API",
+      "value": false
+    }
+  ],
+  "arguments": [
+    {
+      "name": "economizer_type",
+      "display_name": "Economizer Control Type",
+      "description": "",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "choice_values": [
+        "FixedDryBulb",
+        "NoEconomizer",
+        "NoChange"
+      ],
+      "choice_display_names": [
+        "FixedDryBulb",
+        "NoEconomizer",
+        "NoChange"
+      ]
+    },
+    {
+      "name": "econoMaxDryBulbTemp",
+      "display_name": "Economizer Maximum Limit Dry-Bulb Temperature (F).",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 69.0
+    },
+    {
+      "name": "econoMinDryBulbTemp",
+      "display_name": "Economizer Minimum Limit Dry-Bulb Temperature (F).",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": -148.0
+    }
+  ]
+}

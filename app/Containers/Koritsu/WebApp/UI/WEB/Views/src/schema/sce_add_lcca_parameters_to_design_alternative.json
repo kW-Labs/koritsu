@@ -1,0 +1,135 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_add_lcca_parameters_to_design_alternative",
+  "name": "sce_add_lcca_parametersto_design_alternative",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_add_lcca_parameters_to_design_alternative",
+  "uid": "7d7eb439-e878-4030-9e58-2bcaa7761406",
+  "uuid": "{7d7eb439-e878-4030-9e58-2bcaa7761406}",
+  "version_id": "995e7626-1450-4c20-ac45-6f37534af1c6",
+  "version_uuid": "{995e7626-1450-4c20-ac45-6f37534af1c6}",
+  "version_modified": "20220415T165520Z",
+  "xml_checksum": "46902E2D",
+  "display_name": "SCE Add LCCA Parameters to Design Alternative",
+  "class_name": "SCEAddLCCAParameterstoDesignAlternative",
+  "description": "The measure adds user-input life-cycle cost parameters for the entire design alternative.",
+  "modeler_description": "The intent of the measure is to provide a simplified LCCA calculation approach for the entire building upgrade. Life-Cycle costs will be computed following the methodology in NIST Handbook 135, using the latest published use price escalation factors.",
+  "tags": [
+    "Economics.Life Cycle Cost Analysis"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "lcc_name",
+      "display_name": "Alternative Name",
+      "description": "",
+      "type": "String",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "Base"
+    },
+    {
+      "name": "remove_costs",
+      "display_name": "Remove Existing Costs",
+      "description": "Removes Existing costs from the model. Use if O&M costs for Alternative include those for base building.",
+      "type": "Boolean",
+      "required": true,
+      "model_dependent": false,
+      "default_value": true
+    },
+    {
+      "name": "study_period",
+      "display_name": "Set the Length of the Study Period (years).",
+      "description": "Study period should be 25 years or fewer following FEMP LCCA guidelines.",
+      "type": "Integer",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 25,
+      "min": 0,
+      "max": 25
+    },
+    {
+      "name": "demolition_cost",
+      "display_name": "Total Demolition Costs",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "units": "$",
+      "default_value": 0.0,
+      "min": 0.0
+    },
+    {
+      "name": "material_cost",
+      "display_name": "Total Material and Installation Costs",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "units": "$",
+      "default_value": 0.0,
+      "min": 0.0
+    },
+    {
+      "name": "om_cost",
+      "display_name": "Total Recurring Annual O & M Costs",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "units": "$",
+      "default_value": 0.0,
+      "min": 0.0
+    },
+    {
+      "name": "om_frequency",
+      "display_name": "O & M Frequency",
+      "description": "",
+      "type": "Integer",
+      "required": true,
+      "model_dependent": false,
+      "units": "whole years",
+      "default_value": 1,
+      "min": 0
+    },
+    {
+      "name": "replacement_cost",
+      "display_name": "Total Replacement Cost",
+      "description": "Enter Cost to replace equipment (if occurring within study period)",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 0.0,
+      "min": 0.0
+    },
+    {
+      "name": "expected_life",
+      "display_name": "Expected Life of Upgrade",
+      "description": "",
+      "type": "Integer",
+      "required": true,
+      "model_dependent": false,
+      "units": "whole years",
+      "default_value": 20,
+      "min": 0
+    },
+    {
+      "name": "remaining_life",
+      "display_name": "Remaining Life of Replaced Equipment",
+      "description": "",
+      "type": "Integer",
+      "required": true,
+      "model_dependent": false,
+      "units": "whole years",
+      "default_value": 0,
+      "min": 0
+    }
+  ]
+}

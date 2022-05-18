@@ -1,0 +1,7 @@
+{ "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "id": "sce_environmental_impact_factors",
+  "properties": {
+    "climate_zone": { "type": "string", "title":  "cec_climate_zone_num"}
+  }
+}

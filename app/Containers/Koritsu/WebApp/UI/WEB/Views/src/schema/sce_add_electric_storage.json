@@ -1,0 +1,97 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_add_electric_storage",
+  "name": "sce_add_electric_storage",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_add_electric_storage",
+  "uid": "01ff48a4-01b5-476a-ad55-9ea13d848807",
+  "uuid": "{01ff48a4-01b5-476a-ad55-9ea13d848807}",
+  "version_id": "69e8c08f-a61b-4c42-a61f-32e41aba47fd",
+  "version_uuid": "{69e8c08f-a61b-4c42-a61f-32e41aba47fd}",
+  "version_modified": "20220427T033749Z",
+  "xml_checksum": "0806DB2D",
+  "display_name": "SCE Add Electric Storage",
+  "class_name": "SCEAddElectricStorage",
+  "description": "Adds electric storage in the model and offers two methods of controlling storage charging and discharging: Facility Demand Leveling, or Scheduled Charge and Discharge",
+  "modeler_description": "Adds simple electric storage in the model and offers two methods of controlling storage charging and discharging.\n    Method 1.) Facility Demand Leveling – Storage will attempt to control the facility’s power demand drawn from the utility service to a prescribed level. When facility demand is below the target level the storage acts as a load on the grid and is charged. When facility demand is above the target level the storage is discharged to the grid to maintain the demand target.\n    Method 2.) Scheduled Charging/Discharging Storage – Storage is scheduled to be charged and discharged according to specific charge and discharge schedules usually associated with time-of-day utility tariffs. User input will consist of daily start hour and end hour of charging and discharging periods.\n    ",
+  "tags": [
+    "Onsite Power Generation"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "stor_op",
+      "display_name": "Battery Storage Control Mode",
+      "description": "'Facility Demand Leveling' will attempt to control the facility's power demand dran from the utility service to a prescribed level. Scheduled will follow a user-input charging/discharging schedule.",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "Facility Demand Leveling",
+      "choice_values": [
+        "Facility Demand Leveling",
+        "Scheduled"
+      ],
+      "choice_display_names": [
+        "Facility Demand Leveling",
+        "Scheduled"
+      ]
+    },
+    {
+      "name": "demand_target",
+      "display_name": "Utility Demand Target (kW)",
+      "description": "If Storage Control Mode = 'Facility Demand Leveling', this sets the target facility demand for discharge control - battery will discharge to maintain this demand level.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 100.0,
+      "min": 0.0
+    },
+    {
+      "name": "charge_hours",
+      "display_name": "Battery Charge Hours",
+      "description": "If Storage Control Mode = 'Scheduled', enter daily times for battery charging, using 24-hour format. Applies every day in the full run period.",
+      "type": "String",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "HH:MM - HH:MM"
+    },
+    {
+      "name": "stor_cap",
+      "display_name": "Battery Storage Capacity (kWh)",
+      "description": "Total energy storage capacity of battery. Default represents Tesla Powerwall 2.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 14.0,
+      "min": 0.0
+    },
+    {
+      "name": "power",
+      "display_name": "Battery Charge/Discharge Power (kW)",
+      "description": "Maximum rate at which electrical power can be charged/discharged from the battery. Default represents Tesla Powerwall 2.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 5.0,
+      "min": 0.0
+    },
+    {
+      "name": "tot_eff",
+      "display_name": "Nominal 'round-trip' (charge and discharge) energetic efficiency.",
+      "description": "Energetic efficiency from storing and drawing electricl energy from the battery. Values should be between 0.001 and 1.0. Model inputs for charing and discharging efficiency will be the square root of this total 'round-trip' value. Default value represents Tesla Powerwall 2.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 0.9,
+      "min": 0.001,
+      "max": 1.0
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/.bundle/install/ruby/2.7.0/gems/openstudio-ee-0.4.0/lib/measures/ReduceVentilationByPercentage",
+  "name": "reduce_ventilation_by_percentage",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/.bundle/install/ruby/2.7.0/gems/openstudio-ee-0.4.0/lib/measures/ReduceVentilationByPercentage",
+  "uid": "f0859a47-fddf-4962-9035-2f9fc9d6e283",
+  "uuid": "{f0859a47-fddf-4962-9035-2f9fc9d6e283}",
+  "version_id": "f9db803e-498c-46ed-8a18-3730e01e1a33",
+  "version_uuid": "{f9db803e-498c-46ed-8a18-3730e01e1a33}",
+  "version_modified": "20211201T212131Z",
+  "xml_checksum": "ECE70A70",
+  "display_name": "ReduceVentilationByPercentage",
+  "class_name": "ReduceVentilationByPercentage",
+  "description": "This measure will reduce space ventilation rates by the requested percentage. A cost per square foot of building area can be added to the model.",
+  "modeler_description": "This can be run across a space type or the entire building. Costs will be associated with the building. If design specification outdoor air objects are removed at a later date, the costs will remain.",
+  "tags": [
+    "HVAC.Ventilation"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    },
+    {
+      "name": "Uses SketchUp API",
+      "display_name": "Uses SketchUp API",
+      "value": false
+    }
+  ],
+  "arguments": [
+    {
+      "name": "space_type",
+      "display_name": "Apply the Measure to a Specific Space Type or to the Entire Model.",
+      "description": "",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "{c67cd739-df41-4c97-b50f-f7440f560599}",
+      "choice_values": [
+        "{c67cd739-df41-4c97-b50f-f7440f560599}"
+      ],
+      "choice_display_names": [
+        "*Entire Building*"
+      ]
+    },
+    {
+      "name": "design_spec_outdoor_air_reduction_percent",
+      "display_name": "Design Specification Outdoor Air Reduction (%).",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 30.0,
+      "min": -100,
+      "max": 100
+    }
+  ]
+}

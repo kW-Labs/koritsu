@@ -1,0 +1,513 @@
+!-Generator IDFEditor 1.50
+!-Option SortedOrder
+
+Version,
+  9.2;                                    !- Version Identifier
+
+!-NOTE: All comments with '!-' are ignored by the IDFEditor and are generated automatically.
+!-      Use '!' comments if they need to be retained when using the IDFEditor.
+
+!-   ===========  ALL OBJECTS IN CLASS: VERSION ===========
+
+!-   ===========  ALL OBJECTS IN CLASS: SCHEDULETYPELIMITS ===========
+
+ScheduleTypeLimits,
+  Number,                                 !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A3}
+  5,                                      !- Upper Limit Value {BasedOnField A3}
+  Discrete,                               !- Numeric Type
+  Dimensionless;                          !- Unit Type
+
+!-   ===========  ALL OBJECTS IN CLASS: SCHEDULE:COMPACT ===========
+
+Schedule:Compact,
+  Rate Season Sch,                        !- Name
+  Number,                                 !- Schedule Type Limits Name
+  Through: 5/31,                          !- Field 1
+  For: AllDays,                           !- Field 2
+  Until: 24:00,                           !- Field 3
+  1,                                      !- Field 4
+  Through: 9/30,                          !- Field 5
+  For: AllDays,                           !- Field 6
+  Until: 24:00,                           !- Field 7
+  3,                                      !- Field 8
+  Through: 12/31,                         !- Field 9
+  For: AllDays,                           !- Field 10
+  Until: 24:00,                           !- Field 11
+  1;                                      !- Field 12
+
+Schedule:Compact,
+  SCE GS TOD Sch,                         !- Name
+  Number,                                 !- Schedule Type Limits Name
+  Through: 5/31,                          !- Field 1
+  For: AllDays,                           !- Field 2
+  Until: 8:00,                            !- Field 3
+  3,                                      !- Field 4
+  Until: 16:00,                           !- Field 5
+  2,                                      !- Field 6
+  Until: 21:00,                           !- Field 7
+  4,                                      !- Field 8
+  Until: 24:00,                           !- Field 9
+  3,                                      !- Field 10
+  Through: 9/30,                          !- Field 11
+  For: Weekdays,                          !- Field 12
+  Until: 16:00,                           !- Field 13
+  3,                                      !- Field 14
+  Until: 21:00,                           !- Field 15
+  1,                                      !- Field 16
+  Until: 24:00,                           !- Field 17
+  3,                                      !- Field 18
+  For: Weekend,                           !- Field 19
+  Until: 16:00,                           !- Field 20
+  3,                                      !- Field 21
+  Until: 21:00,                           !- Field 22
+  4,                                      !- Field 23
+  Until: 24:00,                           !- Field 24
+  3,                                      !- Field 25
+  Through: 12/31,                         !- Field 26
+  For: AllDays,                           !- Field 27
+  Until: 8:00,                            !- Field 28
+  3,                                      !- Field 29
+  Until: 16:00,                           !- Field 30
+  2,                                      !- Field 31
+  Until: 21:00,                           !- Field 32
+  4,                                      !- Field 33
+  Until: 24:00,                           !- Field 34
+  3;                                      !- Field 35
+
+!-   ===========  ALL OBJECTS IN CLASS: UTILITYCOST:TARIFF ===========
+
+UtilityCost:Tariff,
+  TOU-GS-1_OpD,                           !- Name
+  Electricity:Facility,                   !- Output Meter Name
+  kWh,                                    !- Conversion Factor Choice
+  ,                                       !- Energy Conversion Factor
+  ,                                       !- Demand Conversion Factor
+  SCE GS TOD Sch,                         !- Time of Use Period Schedule Name
+  Rate Season Sch,                        !- Season Schedule Name
+  ,                                       !- Month Schedule Name
+  QuarterHour,                            !- Demand Window Length
+  13.91,                                  !- Monthly Charge or Variable Name
+  ,                                       !- Minimum Monthly Charge or Variable Name
+  ,                                       !- Real Time Pricing Charge Schedule Name
+  ,                                       !- Customer Baseline Load Schedule Name
+  OptionD,                                       !- Group Name
+  BuyFromUtility;                         !- Buy Or Sell
+
+UtilityCost:Tariff,
+  TOU-GS-2_OpD,                           !- Name
+  Electricity:Facility,                   !- Output Meter Name
+  kWh,                                    !- Conversion Factor Choice
+  ,                                       !- Energy Conversion Factor
+  ,                                       !- Demand Conversion Factor
+  SCE GS TOD Sch,                         !- Time of Use Period Schedule Name
+  Rate Season Sch,                        !- Season Schedule Name
+  ,                                       !- Month Schedule Name
+  QuarterHour,                            !- Demand Window Length
+  158.71,                                 !- Monthly Charge or Variable Name
+  ,                                       !- Minimum Monthly Charge or Variable Name
+  ,                                       !- Real Time Pricing Charge Schedule Name
+  ,                                       !- Customer Baseline Load Schedule Name
+  OptionD,                                       !- Group Name
+  BuyFromUtility;                         !- Buy Or Sell
+
+UtilityCost:Tariff,
+  TOU-GS-3_OpD,                           !- Name
+  Electricity:Facility,                   !- Output Meter Name
+  kWh,                                    !- Conversion Factor Choice
+  ,                                       !- Energy Conversion Factor
+  ,                                       !- Demand Conversion Factor
+  SCE GS TOD Sch,                         !- Time of Use Period Schedule Name
+  Rate Season Sch,                        !- Season Schedule Name
+  ,                                       !- Month Schedule Name
+  QuarterHour,                            !- Demand Window Length
+  383.59,                                 !- Monthly Charge or Variable Name
+  ,                                       !- Minimum Monthly Charge or Variable Name
+  ,                                       !- Real Time Pricing Charge Schedule Name
+  ,                                       !- Customer Baseline Load Schedule Name
+  OptionD,                                       !- Group Name
+  BuyFromUtility;                         !- Buy Or Sell
+
+UtilityCost:Tariff,
+  TOU-GS-8_OpD,                           !- Name
+  Electricity:Facility,                   !- Output Meter Name
+  kWh,                                    !- Conversion Factor Choice
+  ,                                       !- Energy Conversion Factor
+  ,                                       !- Demand Conversion Factor
+  SCE GS TOD Sch,                         !- Time of Use Period Schedule Name
+  Rate Season Sch,                        !- Season Schedule Name
+  ,                                       !- Month Schedule Name
+  QuarterHour,                            !- Demand Window Length
+  571.5,                                  !- Monthly Charge or Variable Name
+  ,                                       !- Minimum Monthly Charge or Variable Name
+  ,                                       !- Real Time Pricing Charge Schedule Name
+  ,                                       !- Customer Baseline Load Schedule Name
+  OptionD,                                       !- Group Name
+  BuyFromUtility;                         !- Buy Or Sell
+
+  UtilityCost:Tariff,
+    California_Avg_Commercial_Gas_2020,            !- Name https://www.eia.gov/dnav/ng/ng_pri_sum_dcu_SCA_a.htm
+    NaturalGas:Facility,     !- Output Meter Name
+    MCF,                   !- Conversion Factor Choice
+    ,                        !- Energy Conversion Factor
+    ,                        !- Demand Conversion Factor
+    ,                        !- Time of Use Period Schedule Name
+    ,                        !- Season Schedule Name
+    ,                        !- Month Schedule Name
+    ,                        !- Demand Window Length
+    ;                     !- Monthly Charge or Variable Name
+
+!-   ===========  ALL OBJECTS IN CLASS: UTILITYCOST:QUALIFY ===========
+
+
+
+UtilityCost:Qualify,
+  SCE TOU-GS-1 Rate D Qualify,            !- Utility Cost Qualify Name
+  TOU-GS-1_OpD,                           !- Tariff Name
+  TotalDemand,                            !- Variable Name
+  Maximum,                                !- Qualify Type
+  20,                                     !- Threshold Value or Variable Name
+  Annual,                                 !- Season
+  Count,                                  !- Threshold Test
+  1;                                      !- Number of Months
+
+UtilityCost:Qualify,
+  SCE TOU-GS-2 Rate D Qualify Min,        !- Utility Cost Qualify Name
+  TOU-GS-2_OpD,                           !- Tariff Name
+  TotalDemand,                            !- Variable Name
+  Minimum,                                !- Qualify Type
+  20,                                     !- Threshold Value or Variable Name
+  Annual,                                 !- Season
+  Count,                                  !- Threshold Test
+  12;                                     !- Number of Months
+
+UtilityCost:Qualify,
+  SCE TOU-GS-2 Rate D Qualify Max,        !- Utility Cost Qualify Name
+  TOU-GS-2_OpD,                           !- Tariff Name
+  TotalDemand,                            !- Variable Name
+  Maximum,                                !- Qualify Type
+  200,                                    !- Threshold Value or Variable Name
+  Annual,                                 !- Season
+  Count,                            !- Threshold Test
+  1;                                      !- Number of Months
+
+UtilityCost:Qualify,
+  SCE TOU-GS-3 Rate D Qualify Min,        !- Utility Cost Qualify Name
+  TOU-GS-3_OpD,                           !- Tariff Name
+  TotalDemand,                            !- Variable Name
+  Minimum,                                !- Qualify Type
+  200,                                    !- Threshold Value or Variable Name
+  Annual,                                 !- Season
+  Count,                            !- Threshold Test
+  12;                                     !- Number of Months
+
+UtilityCost:Qualify,
+  SCE TOU-GS-3 Rate D Qualify Max,        !- Utility Cost Qualify Name
+  TOU-GS-3_OpD,                           !- Tariff Name
+  TotalDemand,                            !- Variable Name
+  Maximum,                                !- Qualify Type
+  500,                                    !- Threshold Value or Variable Name
+  Annual,                                 !- Season
+  Count,                            !- Threshold Test
+  1;                                      !- Number of Months
+
+UtilityCost:Qualify,
+  SCE TOU-GS-8 Rate D Qualify Max,        !- Utility Cost Qualify Name
+  TOU-GS-8_OpD,                           !- Tariff Name
+  TotalDemand,                            !- Variable Name
+  Minimum,                                !- Qualify Type
+  500,                                    !- Threshold Value or Variable Name
+  Annual,                                 !- Season
+  Count,                            !- Threshold Test
+  12;                                     !- Number of Months
+
+!-   ===========  ALL OBJECTS IN CLASS: UTILITYCOST:CHARGE:SIMPLE ===========
+
+UtilityCost:Charge:Simple,
+  California_Avg_Commercial_Gas_2020_Charge,    !- Utility Cost Charge Simple Name
+  California_Avg_Commercial_Gas_2020,            !- Tariff Name
+  totalEnergy,             !- Source Variable
+  Annual,                  !- Season
+  EnergyCharges,           !- Category Variable Name
+  9.86;                    !- Cost per Unit Value or Variable Name
+  
+UtilityCost:Charge:Simple,
+  TOU-GS-1_OpD_Peak_Summer_Energy,        !- Utility Cost Charge Simple Name
+  TOU-GS-1_OpD,                           !- Tariff Name
+  peakEnergy,                             !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.17087999999999998;                    !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-1_OpD_MidPeak_Summer_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-1_OpD,                           !- Tariff Name
+  midPeakEnergy,                          !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.16182999999999997;                    !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-1_OpD_OffPeak_Summer_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-1_OpD,                           !- Tariff Name
+  offPeakEnergy,                          !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.10422000000000001;                    !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-1_OpD_MidPeak_Winter_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-1_OpD,                           !- Tariff Name
+  midPeakEnergy,                          !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.16542;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-1_OpD_OffPeak_Winter_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-1_OpD,                           !- Tariff Name
+  offPeakEnergy,                          !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.11244000000000001;                    !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-1_OpD_Shoulder_Winter_Energy,    !- Utility Cost Charge Simple Name
+  TOU-GS-1_OpD,                           !- Tariff Name
+  shoulderEnergy,                         !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.09246;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-1_OpD_Total_Annual_Demand,       !- Utility Cost Charge Simple Name
+  TOU-GS-1_OpD,                           !- Tariff Name
+  totalDemand,                            !- Source Variable
+  Annual,                                 !- Season
+  DemandCharges,                          !- Category Variable Name
+  11.43;                                  !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-1_OpD_Peak_Summer_Demand,        !- Utility Cost Charge Simple Name
+  TOU-GS-1_OpD,                           !- Tariff Name
+  peakDemand,                             !- Source Variable
+  Summer,                                 !- Season
+  DemandCharges,                          !- Category Variable Name
+  3.47;                                   !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-2_OpD_Peak_Summer_Energy,        !- Utility Cost Charge Simple Name
+  TOU-GS-2_OpD,                           !- Tariff Name
+  peakEnergy,                             !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.1401;                                 !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-2_OpD_MidPeak_Summer_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-2_OpD,                           !- Tariff Name
+  midPeakEnergy,                          !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.13067;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-2_OpD_OffPeak_Summer_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-2_OpD,                           !- Tariff Name
+  offPeakEnergy,                          !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.10117;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-2_OpD_MidPeak_Winter_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-2_OpD,                           !- Tariff Name
+  midPeakEnergy,                          !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.11835999999999999;                    !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-2_OpD_OffPeak_Winter_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-2_OpD,                           !- Tariff Name
+  offPeakEnergy,                          !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.1068;                                 !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-2_OpD_Shoulder_Winter_Energy,    !- Utility Cost Charge Simple Name
+  TOU-GS-2_OpD,                           !- Tariff Name
+  shoulderEnergy,                         !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.08509;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-2_OpD_Total_Annual_Demand,       !- Utility Cost Charge Simple Name
+  TOU-GS-2_OpD,                           !- Tariff Name
+  totalDemand,                            !- Source Variable
+  Annual,                                 !- Season
+  DemandCharges,                          !- Category Variable Name
+  13.559999999999999;                     !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-2_OpD_Peak_Summer_Demand,        !- Utility Cost Charge Simple Name
+  TOU-GS-2_OpD,                           !- Tariff Name
+  peakDemand,                             !- Source Variable
+  Summer,                                 !- Season
+  DemandCharges,                          !- Category Variable Name
+  31.67;                                  !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-2_OpD_MidPeak_Winter_Demand,     !- Utility Cost Charge Simple Name
+  TOU-GS-2_OpD,                           !- Tariff Name
+  midPeakDemand,                          !- Source Variable
+  Winter,                                 !- Season
+  DemandCharges,                          !- Category Variable Name
+  8.27;                                   !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-3_OpD_Peak_Summer_Energy,        !- Utility Cost Charge Simple Name
+  TOU-GS-3_OpD,                           !- Tariff Name
+  peakEnergy,                             !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.13217;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-3_OpD_MidPeak_Summer_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-3_OpD,                           !- Tariff Name
+  midPeakEnergy,                          !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.12331;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-3_OpD_OffPeak_Summer_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-3_OpD,                           !- Tariff Name
+  offPeakEnergy,                          !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.09622;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-3_OpD_MidPeak_Winter_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-3_OpD,                           !- Tariff Name
+  midPeakEnergy,                          !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.11251;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-3_OpD_OffPeak_Winter_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-3_OpD,                           !- Tariff Name
+  offPeakEnergy,                          !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.10155;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-3_OpD_Shoulder_Winter_Energy,    !- Utility Cost Charge Simple Name
+  TOU-GS-3_OpD,                           !- Tariff Name
+  shoulderEnergy,                         !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.081;                                  !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-3_OpD_Total_Annual_Demand,       !- Utility Cost Charge Simple Name
+  TOU-GS-3_OpD,                           !- Tariff Name
+  totalDemand,                            !- Source Variable
+  Annual,                                 !- Season
+  DemandCharges,                          !- Category Variable Name
+  14.64;                                  !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-3_OpD_Peak_Summer_Demand,        !- Utility Cost Charge Simple Name
+  TOU-GS-3_OpD,                           !- Tariff Name
+  peakDemand,                             !- Source Variable
+  Summer,                                 !- Season
+  DemandCharges,                          !- Category Variable Name
+  31.46;                                  !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-3_OpD_MidPeak_Winter_Demand,     !- Utility Cost Charge Simple Name
+  TOU-GS-3_OpD,                           !- Tariff Name
+  midPeakDemand,                          !- Source Variable
+  Winter,                                 !- Season
+  DemandCharges,                          !- Category Variable Name
+  7.67;                                   !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-8_OpD_Peak_Summer_Energy,        !- Utility Cost Charge Simple Name
+  TOU-GS-8_OpD,                           !- Tariff Name
+  peakEnergy,                             !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.12297;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-8_OpD_MidPeak_Summer_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-8_OpD,                           !- Tariff Name
+  midPeakEnergy,                          !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.11476;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-8_OpD_OffPeak_Summer_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-8_OpD,                           !- Tariff Name
+  offPeakEnergy,                          !- Source Variable
+  Summer,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.08809;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-8_OpD_MidPeak_Winter_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-8_OpD,                           !- Tariff Name
+  midPeakEnergy,                          !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.10272;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-8_OpD_OffPeak_Winter_Energy,     !- Utility Cost Charge Simple Name
+  TOU-GS-8_OpD,                           !- Tariff Name
+  offPeakEnergy,                          !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.09289;                                !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-8_OpD_Shoulder_Winter_Energy,    !- Utility Cost Charge Simple Name
+  TOU-GS-8_OpD,                           !- Tariff Name
+  shoulderEnergy,                         !- Source Variable
+  Winter,                                 !- Season
+  EnergyCharges,                          !- Category Variable Name
+  0.07442000000000001;                    !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-8_OpD_Total_Annual_Demand,       !- Utility Cost Charge Simple Name
+  TOU-GS-8_OpD,                           !- Tariff Name
+  totalDemand,                            !- Source Variable
+  Annual,                                 !- Season
+  DemandCharges,                          !- Category Variable Name
+  14.98;                                  !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-8_OpD_Peak_Summer_Demand,        !- Utility Cost Charge Simple Name
+  TOU-GS-8_OpD,                           !- Tariff Name
+  peakDemand,                             !- Source Variable
+  Summer,                                 !- Season
+  DemandCharges,                          !- Category Variable Name
+  34.68;                                  !- Cost per Unit Value or Variable Name
+
+UtilityCost:Charge:Simple,
+  TOU-GS-8_OpD_MidPeak_Winter_Demand,     !- Utility Cost Charge Simple Name
+  TOU-GS-8_OpD,                           !- Tariff Name
+  midPeakDemand,                          !- Source Variable
+  Winter,                                 !- Season
+  DemandCharges,                          !- Category Variable Name
+  8.48;                                   !- Cost per Unit Value or Variable Name
+

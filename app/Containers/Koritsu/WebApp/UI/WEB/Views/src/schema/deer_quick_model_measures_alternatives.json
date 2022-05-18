@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "id": "deer_quick_model_measures",
+  "type": "object",
+  "properties": {
+    "measures": {
+      "enum": [
+        "openstudio_results",
+        "add_sce_tariffs",
+        "sce_environmental_impact_factors",
+        "koritsu_run_report"
+      ]
+    }
+  }
+}

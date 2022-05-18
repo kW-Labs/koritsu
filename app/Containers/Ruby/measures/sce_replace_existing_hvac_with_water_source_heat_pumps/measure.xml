@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>sce_replace_existing_hvac_with_water_source_heat_pumps</name>
+  <uid>d608e77f-b8c8-42f3-83af-8eb1c3afd6d6</uid>
+  <version_id>a2aac79c-38a8-4a15-8ea4-5785444f7a9d</version_id>
+  <version_modified>20220427T033834Z</version_modified>
+  <xml_checksum>740F4BDA</xml_checksum>
+  <class_name>SCEReplaceExistingHVACWithWaterSourceHeatPumps</class_name>
+  <display_name>SCE Replace Existing HVAC with Water-Source Heat Pumps</display_name>
+  <description>Replaces building HVAC system with one of a selection of WSHP system configurations. System cooling and heating rated efficiency will be user inputs. Primary equipment (chiller/boiler, cooling tower, etc) efficiency will meet DEER parameters according to the user-entered DEER vintage</description>
+  <modeler_description>The measure will remove all the existing building HVAC systems and replace them with the user-specifed system. A water-source heat pump will be added for each zone in the model. The option to add a dedicated outdoor air system (DOAS) will add one per floor to provide pre-conditioned ventilation air to the zones. DOAS cooling source can be either packaged DX or WSHP; DOAS heating source can be gas furnace, electric resistance, packaged DX (heat pump) or WSHP. User will be able to input efficiencies for DOAS cooling and heating source, to be applied to all DOASs.
+The WSHPs will reject heat to a common condensing water loop. Options for loop heat rejection equipment include a variable-speed cooling tower or fluid cooler, options for heat addition equipment include gas boiler, electric resistance boiler or air-to-water heat pump. User will be able to specify heating source efficiency (percent for gas boiler, COP for Air to Water Heat Pump.
+User input of WSHP cooling and heating efficiency will be applied equally to all zone-level heat pumps added.
+</modeler_description>
+  <arguments>
+    <argument>
+      <name>template</name>
+      <display_name>Target DEER Standard</display_name>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>DEER 2020</default_value>
+      <choices>
+        <choice>
+          <value>DEER Pre-1975</value>
+          <display_name>DEER Pre-1975</display_name>
+        </choice>
+        <choice>
+          <value>DEER 1985</value>
+          <display_name>DEER 1985</display_name>
+        </choice>
+        <choice>
+          <value>DEER 1996</value>
+          <display_name>DEER 1996</display_name>
+        </choice>
+        <choice>
+          <value>DEER 2003</value>
+          <display_name>DEER 2003</display_name>
+        </choice>
+        <choice>
+          <value>DEER 2007</value>
+          <display_name>DEER 2007</display_name>
+        </choice>
+        <choice>
+          <value>DEER 2011</value>
+          <display_name>DEER 2011</display_name>
+        </choice>
+        <choice>
+          <value>DEER 2014</value>
+          <display_name>DEER 2014</display_name>
+        </choice>
+        <choice>
+          <value>DEER 2015</value>
+          <display_name>DEER 2015</display_name>
+        </choice>
+        <choice>
+          <value>DEER 2017</value>
+          <display_name>DEER 2017</display_name>
+        </choice>
+        <choice>
+          <value>DEER 2020</value>
+          <display_name>DEER 2020</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>doas</name>
+      <display_name>Add Dedicated Outdoor Air System (DOAS)</display_name>
+      <description>If selected, a Dedicated Outdoor Air System will be added per floor to precondition outside air delivered to the zones.</description>
+      <type>Boolean</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>false</default_value>
+      <choices>
+        <choice>
+          <value>true</value>
+          <display_name>true</display_name>
+        </choice>
+        <choice>
+          <value>false</value>
+          <display_name>false</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>doas_cool</name>
+      <display_name>Cooling Source for DOAS</display_name>
+      <description>Sets the cooling source for the Dedicated Outside Air System.</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>No DOAS</default_value>
+      <choices>
+        <choice>
+          <value>WSHP</value>
+          <display_name>WSHP</display_name>
+        </choice>
+        <choice>
+          <value>DX</value>
+          <display_name>DX</display_name>
+        </choice>
+        <choice>
+          <value>No DOAS</value>
+          <display_name>No DOAS</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>doas_cool_cop</name>
+      <display_name>DOAS Cooling Source Rated COP</display_name>
+      <description>This value will be applied to DOAS cooling equipment</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>3</default_value>
+    </argument>
+    <argument>
+      <name>doas_heat</name>
+      <display_name>Heating Source for DOAS</display_name>
+      <description>Sets the heating source for the Dedicated Outside Air System.</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>No DOAS</default_value>
+      <choices>
+        <choice>
+          <value>Gas Furnace</value>
+          <display_name>Gas Furnace</display_name>
+        </choice>
+        <choice>
+          <value>Electric Resistance</value>
+          <display_name>Electric Resistance</display_name>
+        </choice>
+        <choice>
+          <value>WSHP</value>
+          <display_name>WSHP</display_name>
+        </choice>
+        <choice>
+          <value>Air Source Heat Pump</value>
+          <display_name>Air Source Heat Pump</display_name>
+        </choice>
+        <choice>
+          <value>No DOAS</value>
+          <display_name>No DOAS</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>doas_heat_cop</name>
+      <display_name>DOAS Heating Source Rated Efficiency</display_name>
+      <description>This value will be applied to DOAS heating equipment.
+For gas furnace, enter a value less than 1 as furnace AFUE.
+For Electric resistance, enter 1.0.
+For WSHP/Air-source heat pump this is rated COP (&gt;1).</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>1</default_value>
+    </argument>
+    <argument>
+      <name>loop_cool</name>
+      <display_name>WSHP Loop Heat Rejection Equipment</display_name>
+      <description>Type of equipment used to reject heat from the WSHP water loop</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Cooling Tower</default_value>
+      <choices>
+        <choice>
+          <value>Cooling Tower</value>
+          <display_name>Cooling Tower</display_name>
+        </choice>
+        <choice>
+          <value>Fluid Cooler</value>
+          <display_name>Fluid Cooler</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>loop_heat</name>
+      <display_name>WSHP Loop Heating Equipment</display_name>
+      <description>Type of equipment used to add heat to the WSHP water loop</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Gas Boiler</default_value>
+      <choices>
+        <choice>
+          <value>Gas Boiler</value>
+          <display_name>Gas Boiler</display_name>
+        </choice>
+        <choice>
+          <value>Electric Boiler</value>
+          <display_name>Electric Boiler</display_name>
+        </choice>
+        <choice>
+          <value>Central Air-Water Heat Pump</value>
+          <display_name>Central Air-Water Heat Pump</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>loop_heat_cop</name>
+      <display_name>WSHP Heating Source Rated Efficiency</display_name>
+      <description>This value will be applied to WSHP loop heating equipment.
+For gas boiler, enter a value less than 1 as boiler thermal efficiency.
+For Electric boiler, enter 1.0.
+For Central Air-water heat pump this is rated COP (&gt;1).</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>1</default_value>
+    </argument>
+    <argument>
+      <name>cool_cop</name>
+      <display_name>Water-Source Heat Pump Cooling Rated COP</display_name>
+      <description>This value will be applied to all zone-level WSHP equipment in cooling.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>3</default_value>
+    </argument>
+    <argument>
+      <name>heat_cop</name>
+      <display_name>Heat Pump Heating Rated COP</display_name>
+      <description>This value will be applied to all zone-level WSHP equipment in heating.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>3</default_value>
+    </argument>
+  </arguments>
+  <outputs />
+  <provenances />
+  <tags>
+    <tag>HVAC.Whole System</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>ModelMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Apply Measure Now</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>New Construction EE</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Retrofit EE</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>LICENSE.md</filename>
+      <filetype>md</filetype>
+      <usage_type>license</usage_type>
+      <checksum>CD7F5672</checksum>
+    </file>
+    <file>
+      <filename>README.md.erb</filename>
+      <filetype>erb</filetype>
+      <usage_type>readmeerb</usage_type>
+      <checksum>703C9964</checksum>
+    </file>
+    <file>
+      <filename>.gitkeep</filename>
+      <filetype>gitkeep</filetype>
+      <usage_type>doc</usage_type>
+      <checksum>00000000</checksum>
+    </file>
+    <file>
+      <filename>example_model.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>53D14E69</checksum>
+    </file>
+    <file>
+      <filename>sce_replace_existing_hvac_with_water_source_heat_pumps_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>40087329</checksum>
+    </file>
+    <file>
+      <filename>add_wshp_output.log</filename>
+      <filetype>log</filetype>
+      <usage_type>test</usage_type>
+      <checksum>9C68E865</checksum>
+    </file>
+    <file>
+      <filename>README.md</filename>
+      <filetype>md</filetype>
+      <usage_type>readme</usage_type>
+      <checksum>45DCF3B1</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>2.9.0</identifier>
+        <min_compatible>2.9.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>D3DF804D</checksum>
+    </file>
+    <file>
+      <filename>SCE_Hvac.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>C61F6953</checksum>
+    </file>
+  </files>
+</measure>

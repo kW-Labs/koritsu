@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>sce_demand_response</name>
+  <uid>789ee424-ddbe-4437-a9e2-de1d7343f41f</uid>
+  <version_id>459bfddf-d5b5-493e-bbee-5d4987ea8cff</version_id>
+  <version_modified>20220307T201012Z</version_modified>
+  <xml_checksum>0EB71C7A</xml_checksum>
+  <class_name>SCEDemandResponse</class_name>
+  <display_name>SCE Demand Response</display_name>
+  <description>This measure adds control logic to the model to reduce the peak electrical power draw (demand) from the utility. Demand is managed in this model by turning down the lights and equipment and increasing the cooling setpoints throughout the facility.</description>
+  <modeler_description>The measure will create demand limiting objects that attempt to control electric equipment to the user-input target demand limit. The demand limiting control will attempt to limit facility demand to the target during the SCE TOU peak demand period defined in the SCE tariffs. Demand will be limited in priority order of exterior lights, interior lights, interior electric equipment, and HVAC thermostats. User will input the maximum limit fractions for each of the electric loads, and reset temperatures for the thermostats, which will be applied to all such loads and zones in the model.</modeler_description>
+  <arguments>
+    <argument>
+      <name>demand_target</name>
+      <display_name>Target Demand Limit</display_name>
+      <description>Demand response controls will adjust building loads to attempt to maintain this demand level (kW).</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>100</default_value>
+    </argument>
+    <argument>
+      <name>ext_lt_lim_frac</name>
+      <display_name>Exterior Lighting Maximum Limit Fraction</display_name>
+      <description>Fraction of building's exterior lighting power to be limited in a Demand Response event (value from 0 - 1).</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>1</default_value>
+    </argument>
+    <argument>
+      <name>int_lt_lim_frac</name>
+      <display_name>Interior Lighting Maximum Limit Fraction</display_name>
+      <description>Fraction of building's interior lighting power to be limited in a Demand Response event (value from 0 - 1).</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>0.3</default_value>
+    </argument>
+    <argument>
+      <name>equip_lim_frac</name>
+      <display_name>Electric Equipment Maximum Limit Fraction</display_name>
+      <description>Fraction of building's electric equipment (plug and process load) power to be limited in a Demand Response event (value from 0 - 1).</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>0.5</default_value>
+    </argument>
+    <argument>
+      <name>max_heat_reset</name>
+      <display_name>Minimum Temperature to Reset Thermostat Heating Setpoint</display_name>
+      <description>During a Demand Response event, controls will attempt to meet demand limit by resetting thermostat setpoint temperature. This is the minimum temperature the heating setpoint will be allowed to be reset (F). An input of 0 will disallow setpoint adjustment for DR.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>65</default_value>
+    </argument>
+    <argument>
+      <name>max_cool_reset</name>
+      <display_name>Maximum Temperature to Reset Thermostat Cooling Setpoint</display_name>
+      <description>During a Demand Response event, controls will attempt to meet demand limit by resetting thermostat setpoint temperature. This is the maximum temperature the cooling setpoint will be allowed to be reset (F). An input of 0 will disallow setpoint adjustment for DR.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>78</default_value>
+    </argument>
+  </arguments>
+  <outputs />
+  <provenances />
+  <tags>
+    <tag>Equipment.Equipment Controls</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>EnergyPlusMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>LICENSE.md</filename>
+      <filetype>md</filetype>
+      <usage_type>license</usage_type>
+      <checksum>CD7F5672</checksum>
+    </file>
+    <file>
+      <filename>README.md.erb</filename>
+      <filetype>erb</filetype>
+      <usage_type>readmeerb</usage_type>
+      <checksum>F1C26127</checksum>
+    </file>
+    <file>
+      <filename>.gitkeep</filename>
+      <filetype>gitkeep</filetype>
+      <usage_type>doc</usage_type>
+      <checksum>00000000</checksum>
+    </file>
+    <file>
+      <filename>sce_demand_response_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>EF9AC4E0</checksum>
+    </file>
+    <file>
+      <filename>in.idf</filename>
+      <filetype>idf</filetype>
+      <usage_type>test</usage_type>
+      <checksum>51B21D6C</checksum>
+    </file>
+    <file>
+      <filename>README.md</filename>
+      <filetype>md</filetype>
+      <usage_type>readme</usage_type>
+      <checksum>ABD880D7</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>3.3.0</identifier>
+        <min_compatible>3.3.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>4238511F</checksum>
+    </file>
+  </files>
+</measure>

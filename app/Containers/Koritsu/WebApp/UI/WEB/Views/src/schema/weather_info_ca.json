@@ -1,0 +1,1198 @@
+[
+  {
+    "state": "CA",
+    "latitude": 32.5667,
+    "longitude": -116.9667,
+    "location": "Chula Vista Brown Field Naas",
+    "weather_file_name": "USA_CA_Chula.Vista-Brown.Field.Muni.AP.722904_TMY3.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC1",
+    "cec_climate_zone_num": "1"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.6167,
+    "longitude": -122.4,
+    "location": "San Francisco Intl Ap",
+    "weather_file_name": "USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC1",
+    "cec_climate_zone_num": "1"
+  },
+  {
+    "state": "CA",
+    "latitude": 41.49,
+    "longitude": -120.56,
+    "location": "ALTURAS",
+    "weather_file_name": "CA_ALTURAS_725958S_TYP12.epw",
+    "climate_zone": "5B",
+    "cec_climate_zone": "CEC T24-CEC16",
+    "cec_climate_zone_num": "16"
+  },
+  {
+    "state": "CA",
+    "latitude": 40.98,
+    "longitude": -124.11,
+    "location": "ARCATA-AP",
+    "weather_file_name": "CA_ARCATA-AP_725945S_TYP12.epw",
+    "climate_zone": "4C",
+    "cec_climate_zone": "CEC T24-CEC1",
+    "cec_climate_zone_num": "1"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.95,
+    "longitude": -121.08,
+    "location": "AUBURN-MUNI-AP",
+    "weather_file_name": "CA_AUBURN-MUNI-AP_720267S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC11",
+    "cec_climate_zone_num": "11"
+  },
+  {
+    "state": "CA",
+    "latitude": 35.43,
+    "longitude": -119.05,
+    "location": "BAKERSFIELD-MEADOWS-FLD",
+    "weather_file_name": "CA_BAKERSFIELD-MEADOWS-FLD_723840S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC13",
+    "cec_climate_zone_num": "13"
+  },
+  {
+    "state": "CA",
+    "latitude": 39.13,
+    "longitude": -121.43,
+    "location": "BEALE-AFB",
+    "weather_file_name": "CA_BEALE-AFB_724837S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC11",
+    "cec_climate_zone_num": "11"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.37,
+    "longitude": -118.36,
+    "location": "BISHOP-AP",
+    "weather_file_name": "CA_BISHOP-AP_724800S_TYP12.epw",
+    "climate_zone": "4B",
+    "cec_climate_zone": "CEC T24-CEC16",
+    "cec_climate_zone_num": "16"
+  },
+  {
+    "state": "CA",
+    "latitude": 39.28,
+    "longitude": -120.71,
+    "location": "BLUE-CANYON-AP",
+    "weather_file_name": "CA_BLUE-CANYON-AP_725845S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC16",
+    "cec_climate_zone_num": "16"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.62,
+    "longitude": -114.71,
+    "location": "BLYTHE-RIVERSIDE-CO-AP",
+    "weather_file_name": "CA_BLYTHE-RIVERSIDE-CO-AP_747188S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC15",
+    "cec_climate_zone_num": "15"
+  },
+  {
+    "state": "CA",
+    "latitude": 32.57,
+    "longitude": -116.98,
+    "location": "BROWN-FLD-MUNI",
+    "weather_file_name": "CA_BROWN-FLD-MUNI_722904S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC7",
+    "cec_climate_zone_num": "7"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.2,
+    "longitude": -118.36,
+    "location": "BURBANK-GLNDLE-PASAD-AP",
+    "weather_file_name": "CA_BURBANK-GLNDLE-PASAD-AP_722880S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC9",
+    "cec_climate_zone_num": "9"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.22,
+    "longitude": -119.08,
+    "location": "CAMARILLO-AP",
+    "weather_file_name": "CA_CAMARILLO-AP_723926S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC6",
+    "cec_climate_zone_num": "6"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.3,
+    "longitude": -117.35,
+    "location": "CAMP-PENDLETON-MCAS",
+    "weather_file_name": "CA_CAMP-PENDLETON-MCAS_722926S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC7",
+    "cec_climate_zone_num": "7"
+  },
+  {
+    "state": "CA",
+    "latitude": 32.63,
+    "longitude": -116.47,
+    "location": "CAMPO",
+    "weather_file_name": "CA_CAMPO_747186S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC14",
+    "cec_climate_zone_num": "14"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.13,
+    "longitude": -117.28,
+    "location": "CARLSBAD-MCCLELLAN",
+    "weather_file_name": "CA_CARLSBAD-MCCLELLAN_722927S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC7",
+    "cec_climate_zone_num": "7"
+  },
+  {
+    "state": "CA",
+    "latitude": 39.8,
+    "longitude": -121.85,
+    "location": "CHICO-MUNI-AP",
+    "weather_file_name": "CA_CHICO-MUNI-AP_724973S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC11",
+    "cec_climate_zone_num": "11"
+  },
+  {
+    "state": "CA",
+    "latitude": 35.69,
+    "longitude": -117.69,
+    "location": "CHINA-LAKE-NAF",
+    "weather_file_name": "CA_CHINA-LAKE-NAF_746120S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC14",
+    "cec_climate_zone_num": "14"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.98,
+    "longitude": -117.64,
+    "location": "CHINO-AP",
+    "weather_file_name": "CA_CHINO-AP_722899S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC10",
+    "cec_climate_zone_num": "10"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.03,
+    "longitude": -120.42,
+    "location": "COLUMBIA",
+    "weather_file_name": "CA_COLUMBIA_720615S_TYP11.epw",
+    "climate_zone": "4B",
+    "cec_climate_zone": "CEC T24-CEC12",
+    "cec_climate_zone_num": "12"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.99,
+    "longitude": -122.06,
+    "location": "CONCORD-BUCHANAN-FLD",
+    "weather_file_name": "CA_CONCORD-BUCHANAN-FLD_724936-50S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12",
+    "cec_climate_zone_num": "12"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.9,
+    "longitude": -117.6,
+    "location": "CORONA-MUNI-AP",
+    "weather_file_name": "CA_CORONA-MUNI-AP_720333S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC10",
+    "cec_climate_zone_num": "10"
+  },
+  {
+    "state": "CA",
+    "latitude": 41.78,
+    "longitude": -124.24,
+    "location": "CRESCENT-CITY-FAA-AP",
+    "weather_file_name": "CA_CRESCENT-CITY-FAA-AP_725946S_TYP12.epw",
+    "climate_zone": "4C",
+    "cec_climate_zone": "CEC T24-CEC1",
+    "cec_climate_zone_num": "1"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.85,
+    "longitude": -116.79,
+    "location": "DAGGETT-BARSTOW-AP",
+    "weather_file_name": "CA_DAGGETT-BARSTOW-AP_723815S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC14",
+    "cec_climate_zone_num": "14"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.53,
+    "longitude": -121.78,
+    "location": "DAVIS-AP",
+    "weather_file_name": "CA_DAVIS-AP_720576S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12",
+    "cec_climate_zone_num": "12"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.9,
+    "longitude": -117.87,
+    "location": "EDWARDS-AFB",
+    "weather_file_name": "CA_EDWARDS-AFB_723810S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC14",
+    "cec_climate_zone_num": "4"
+  },
+  {
+    "state": "CA",
+    "latitude": 32.82,
+    "longitude": -115.68,
+    "location": "EL-CENTRO-NAF",
+    "weather_file_name": "CA_EL-CENTRO-NAF_722810S_TYP12.epw",
+    "climate_zone": "2B",
+    "cec_climate_zone": "CEC T24-CEC15",
+    "cec_climate_zone_num": "15"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.08,
+    "longitude": -118.03,
+    "location": "EL-MONTE",
+    "weather_file_name": "CA_EL-MONTE_747043S_TYP9.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC9",
+    "cec_climate_zone_num": "9"
+  },
+  {
+    "state": "CA",
+    "latitude": 40.81,
+    "longitude": -124.16,
+    "location": "EUREKA",
+    "weather_file_name": "CA_EUREKA_725940S_TYP12.epw",
+    "climate_zone": "4C",
+    "cec_climate_zone": "CEC T24-CEC1",
+    "cec_climate_zone_num": "1"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.27,
+    "longitude": -121.93,
+    "location": "FAIRFIELD-TRAVIS-AF",
+    "weather_file_name": "CA_FAIRFIELD-TRAVIS-AF_745160S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12",
+    "cec_climate_zone_num": "12"
+  },
+  {
+    "state": "CA",
+    "latitude": 36.73,
+    "longitude": -119.82,
+    "location": "FRESNO-CHANDLER-EXEC-AP",
+    "weather_file_name": "CA_FRESNO-CHANDLER-EXEC-AP_723897S_TYP4.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC13",
+    "cec_climate_zone_num": "13"
+  },
+  {
+    "state": "CA",
+    "latitude": 36.78,
+    "longitude": -119.72,
+    "location": "FRESNO-YOSEMITE-IAP",
+    "weather_file_name": "CA_FRESNO-YOSEMITE-IAP_723890S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC13",
+    "cec_climate_zone_num": "13"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.87,
+    "longitude": -117.98,
+    "location": "FULLERTON-MUNI-AP",
+    "weather_file_name": "CA_FULLERTON-MUNI-AP_722976S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC8",
+    "cec_climate_zone_num": "8"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.58,
+    "longitude": -117.38,
+    "location": "GEORGE-AFB",
+    "weather_file_name": "CA_GEORGE-AFB_723825S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC14",
+    "cec_climate_zone_num": "14"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.15,
+    "longitude": -122.55,
+    "location": "GNOSS-FLD-AP",
+    "weather_file_name": "CA_GNOSS-FLD-AP_720406S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC2",
+    "cec_climate_zone_num": "2"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.56,
+    "longitude": -117.68,
+    "location": "GRAY-BUTTE-FLD",
+    "weather_file_name": "CA_GRAY-BUTTE-FLD_720952S_TYP8.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC14"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.51,
+    "longitude": -122.5,
+    "location": "HALF-MOON-BAY-AP",
+    "weather_file_name": "CA_HALF-MOON-BAY-AP_720646S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC3"
+  },
+  {
+    "state": "CA",
+    "latitude": 36.32,
+    "longitude": -119.63,
+    "location": "HANFORD-MUNI-AP",
+    "weather_file_name": "CA_HANFORD-MUNI-AP_723898S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC13"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.65,
+    "longitude": -122.11,
+    "location": "HAYWARD-AP",
+    "weather_file_name": "CA_HAYWARD-AP_724935-5850S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC3"
+  },
+  {
+    "state": "CA",
+    "latitude": 36.9,
+    "longitude": -121.42,
+    "location": "HOLLISTER-MUNI",
+    "weather_file_name": "CA_HOLLISTER-MUNI_749179S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC4"
+  },
+  {
+    "state": "CA",
+    "latitude": 32.57,
+    "longitude": -117.12,
+    "location": "IMPERIAL-BEACH-REAM-FLD",
+    "weather_file_name": "CA_IMPERIAL-BEACH-REAM-FLD_722909S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC7"
+  },
+  {
+    "state": "CA",
+    "latitude": 32.83,
+    "longitude": -115.58,
+    "location": "IMPERIAL",
+    "weather_file_name": "CA_IMPERIAL_747185S_TYP12.epw",
+    "climate_zone": "2B",
+    "cec_climate_zone": "CEC T24-CEC15"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.92,
+    "longitude": -118.33,
+    "location": "JACK-NORTHROP-FLD-H",
+    "weather_file_name": "CA_JACK-NORTHROP-FLD-H_722956S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC8"
+  },
+  {
+    "state": "CA",
+    "latitude": 40.75,
+    "longitude": -122.92,
+    "location": "L-POOL-FLD-WEAVERVILLE",
+    "weather_file_name": "CA_L-POOL-FLD-WEAVERVILLE_720193S_TYP12.epw",
+    "climate_zone": "4B",
+    "cec_climate_zone": "CEC T24-CEC16"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.9,
+    "longitude": -120,
+    "location": "LAKE-TAHOE",
+    "weather_file_name": "CA_LAKE-TAHOE_725847S_TYP12.epw",
+    "climate_zone": "4B",
+    "cec_climate_zone": "CEC T24-CEC16"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.74,
+    "longitude": -118.21,
+    "location": "LANCASTER-WM-FOX-FLD",
+    "weather_file_name": "CA_LANCASTER-WM-FOX-FLD_723816S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC14"
+  },
+  {
+    "state": "CA",
+    "latitude": 36.33,
+    "longitude": -119.95,
+    "location": "LEMOORE-REEVES-NAS",
+    "weather_file_name": "CA_LEMOORE-REEVES-NAS_747020S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC13"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.91,
+    "longitude": -121.35,
+    "location": "LINCOLN-RGNL-AP",
+    "weather_file_name": "CA_LINCOLN-RGNL-AP_720614S_TYP10.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC11"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.91,
+    "longitude": -121.35,
+    "location": "LINCOLN-RGNL",
+    "weather_file_name": "CA_LINCOLN-RGNL_720614S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC11"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.69,
+    "longitude": -121.81,
+    "location": "LIVERMORE-MUNI-AP",
+    "weather_file_name": "CA_LIVERMORE-MUNI-AP_724927S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC12"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.67,
+    "longitude": -120.47,
+    "location": "LOMPOC",
+    "weather_file_name": "CA_LOMPOC_722895S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC5"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.81,
+    "longitude": -118.15,
+    "location": "LONG-BEACH-DAUGHERTY-FLD",
+    "weather_file_name": "CA_LONG-BEACH-DAUGHERTY-FLD_722970S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC8"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.79,
+    "longitude": -118.05,
+    "location": "LOS-ALAMITOS-AAF",
+    "weather_file_name": "CA_LOS-ALAMITOS-AAF_722975S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC8"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.02,
+    "longitude": -118.29,
+    "location": "LOS-ANGELES-DOWNTOWN-USC",
+    "weather_file_name": "CA_LOS-ANGELES-DOWNTOWN-USC_722874S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC8"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.94,
+    "longitude": -118.39,
+    "location": "LOS-ANGELES-IAP",
+    "weather_file_name": "CA_LOS-ANGELES-IAP_722950S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC6"
+  },
+  {
+    "state": "CA",
+    "latitude": 36.99,
+    "longitude": -120.11,
+    "location": "MADERA-MUNI",
+    "weather_file_name": "CA_MADERA-MUNI_745046S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC13"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.63,
+    "longitude": -118.85,
+    "location": "MAMMOTH-YOSEMITE",
+    "weather_file_name": "CA_MAMMOTH-YOSEMITE_723894S_TYP12.epw",
+    "climate_zone": "6B",
+    "cec_climate_zone": "CEC T24-CEC16"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.67,
+    "longitude": -121.4,
+    "location": "MCCLELLAN-AFB",
+    "weather_file_name": "CA_MCCLELLAN-AFB_724836S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.38,
+    "longitude": -120.57,
+    "location": "MERCED-CASTLE-AFB",
+    "weather_file_name": "CA_MERCED-CASTLE-AFB_724810S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.28,
+    "longitude": -120.51,
+    "location": "MERCED-MACREADY-FLD",
+    "weather_file_name": "CA_MERCED-MACREADY-FLD_724815S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.62,
+    "longitude": -120.95,
+    "location": "MODESTO-CITY-CO-AP",
+    "weather_file_name": "CA_MODESTO-CITY-CO-AP_724926S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12"
+  },
+  {
+    "state": "CA",
+    "latitude": 35.07,
+    "longitude": -118.15,
+    "location": "MOJAVE",
+    "weather_file_name": "CA_MOJAVE_722953S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC14"
+  },
+  {
+    "state": "CA",
+    "latitude": 41.78,
+    "longitude": -122.47,
+    "location": "MONTAGUE-SISKIYOU-CO-AP",
+    "weather_file_name": "CA_MONTAGUE-SISKIYOU-CO-AP_725955S_TYP12.epw",
+    "climate_zone": "5B",
+    "cec_climate_zone": "CEC T24-CEC16"
+  },
+  {
+    "state": "CA",
+    "latitude": 36.59,
+    "longitude": -121.85,
+    "location": "MONTEREY-PENINSULA",
+    "weather_file_name": "CA_MONTEREY-PENINSULA_724915S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC3"
+  },
+  {
+    "state": "CA",
+    "latitude": 41.33,
+    "longitude": -122.33,
+    "location": "MOUNT-SHASTA",
+    "weather_file_name": "CA_MOUNT-SHASTA_725957S_TYP12.epw",
+    "climate_zone": "5B",
+    "cec_climate_zone": "CEC T24-CEC16"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.41,
+    "longitude": -122.05,
+    "location": "MOUNTAIN-VIEW-MOFFETT-FLD",
+    "weather_file_name": "CA_MOUNTAIN-VIEW-MOFFETT-FLD_745090S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC4"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.21,
+    "longitude": -122.29,
+    "location": "NAPA-CO",
+    "weather_file_name": "CA_NAPA-CO_724955S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC2"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.77,
+    "longitude": -114.62,
+    "location": "NEEDLES-AP",
+    "weather_file_name": "CA_NEEDLES-AP_723805S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC15"
+  },
+  {
+    "state": "CA",
+    "latitude": 39.22,
+    "longitude": -121,
+    "location": "NEVADA-CO-AIR-PARK",
+    "weather_file_name": "CA_NEVADA-CO-AIR-PARK_749486S_TYP9.epw",
+    "climate_zone": "5B",
+    "cec_climate_zone": "CEC T24-CEC11"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.72,
+    "longitude": -122.22,
+    "location": "OAKLAND-METRO-AP",
+    "weather_file_name": "CA_OAKLAND-METRO-AP_724930S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC3"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.22,
+    "longitude": -117.35,
+    "location": "OCEANSIDE-MUNI-AP",
+    "weather_file_name": "CA_OCEANSIDE-MUNI-AP_722934S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC7"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.06,
+    "longitude": -117.6,
+    "location": "ONTARIO-IAP",
+    "weather_file_name": "CA_ONTARIO-IAP_747040S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC10"
+  },
+  {
+    "state": "CA",
+    "latitude": 39.49,
+    "longitude": -121.62,
+    "location": "OROVILLE",
+    "weather_file_name": "CA_OROVILLE_745048S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC11"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.2,
+    "longitude": -119.21,
+    "location": "OXNARD-AP",
+    "weather_file_name": "CA_OXNARD-AP_723927S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC6"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.82,
+    "longitude": -116.5,
+    "location": "PALM-SPRINGS-IAP",
+    "weather_file_name": "CA_PALM-SPRINGS-IAP_722868S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC15"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.63,
+    "longitude": -116.16,
+    "location": "PALM-SPRINGS-THERMAL-AP",
+    "weather_file_name": "CA_PALM-SPRINGS-THERMAL-AP_747187S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC15"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.63,
+    "longitude": -118.08,
+    "location": "PALMDALE-AP",
+    "weather_file_name": "CA_PALMDALE-AP_723820S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC14"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.47,
+    "longitude": -122.12,
+    "location": "PALO-ALTO-AP",
+    "weather_file_name": "CA_PALO-ALTO-AP_724937S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC4"
+  },
+  {
+    "state": "CA",
+    "latitude": 35.67,
+    "longitude": -120.63,
+    "location": "PASO-ROBLES-MUNI-AP",
+    "weather_file_name": "CA_PASO-ROBLES-MUNI-AP_723965S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC4"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.72,
+    "longitude": -120.75,
+    "location": "PLACERVILLE-AP",
+    "weather_file_name": "CA_PLACERVILLE-AP_720645S_TYP12.epw",
+    "climate_zone": "4B",
+    "cec_climate_zone": "CEC T24-CEC12"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.12,
+    "longitude": -119.12,
+    "location": "POINT-MUGU-NF",
+    "weather_file_name": "CA_POINT-MUGU-NF_723910S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC6"
+  },
+  {
+    "state": "CA",
+    "latitude": 36.03,
+    "longitude": -119.06,
+    "location": "PORTERVILLE",
+    "weather_file_name": "CA_PORTERVILLE_723895S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC13"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.04,
+    "longitude": -116.92,
+    "location": "RAMONA",
+    "weather_file_name": "CA_RAMONA_745056S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC10"
+  },
+  {
+    "state": "CA",
+    "latitude": 40.15,
+    "longitude": -122.25,
+    "location": "RED-BLUFF-MUNI-AP",
+    "weather_file_name": "CA_RED-BLUFF-MUNI-AP_725910S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC11"
+  },
+  {
+    "state": "CA",
+    "latitude": 40.52,
+    "longitude": -122.3,
+    "location": "REDDING-MUNI-AP",
+    "weather_file_name": "CA_REDDING-MUNI-AP_725920S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC11"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.9,
+    "longitude": -117.25,
+    "location": "RIVERSIDE-MARCH-AFB",
+    "weather_file_name": "CA_RIVERSIDE-MARCH-AFB_722860S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC10"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.95,
+    "longitude": -117.44,
+    "location": "RIVERSIDE-MUNI",
+    "weather_file_name": "CA_RIVERSIDE-MUNI_722869S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC10"
+  },
+  {
+    "state": "CA",
+    "latitude": 40.55,
+    "longitude": -124.13,
+    "location": "ROHNERVILLE",
+    "weather_file_name": "CA_ROHNERVILLE_749485S_TYP8.epw",
+    "climate_zone": "4C",
+    "cec_climate_zone": "CEC T24-CEC1"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.51,
+    "longitude": -121.5,
+    "location": "SACRAMENTO-EXECUTIVE-AP",
+    "weather_file_name": "CA_SACRAMENTO-EXECUTIVE-AP_724830S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.57,
+    "longitude": -121.3,
+    "location": "SACRAMENTO-MATHER-FL",
+    "weather_file_name": "CA_SACRAMENTO-MATHER-FL_724833S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.7,
+    "longitude": -121.59,
+    "location": "SACRAMENTO-METRO-AP",
+    "weather_file_name": "CA_SACRAMENTO-METRO-AP_724839S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12"
+  },
+  {
+    "state": "CA",
+    "latitude": 36.66,
+    "longitude": -121.61,
+    "location": "SALINAS-MUNI",
+    "weather_file_name": "CA_SALINAS-MUNI_724917-5930S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC3"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.09,
+    "longitude": -117.24,
+    "location": "SAN-BERNARDINO-IAP",
+    "weather_file_name": "CA_SAN-BERNARDINO-IAP_722866S_TYP8.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC10"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.52,
+    "longitude": -122.25,
+    "location": "SAN-CARLOS-AP",
+    "weather_file_name": "CA_SAN-CARLOS-AP_724938S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC3"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.02,
+    "longitude": -118.59,
+    "location": "SAN-CLEMENTE-IS-NAAS",
+    "weather_file_name": "CA_SAN-CLEMENTE-IS-NAAS_722925S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC7"
+  },
+  {
+    "state": "CA",
+    "latitude": 32.83,
+    "longitude": -116.97,
+    "location": "SAN-DIEGO-GILLESPIE",
+    "weather_file_name": "CA_SAN-DIEGO-GILLESPIE_722907S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC10"
+  },
+  {
+    "state": "CA",
+    "latitude": 32.73,
+    "longitude": -117.18,
+    "location": "SAN-DIEGO-LINDBERGH-FLD",
+    "weather_file_name": "CA_SAN-DIEGO-LINDBERGH-FLD_722900S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC7"
+  },
+  {
+    "state": "CA",
+    "latitude": 32.87,
+    "longitude": -117.13,
+    "location": "SAN-DIEGO-MIRAMAR-MCAS",
+    "weather_file_name": "CA_SAN-DIEGO-MIRAMAR-MCAS_722930-31S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC7"
+  },
+  {
+    "state": "CA",
+    "latitude": 32.82,
+    "longitude": -117.14,
+    "location": "SAN-DIEGO-MONTGOMER",
+    "weather_file_name": "CA_SAN-DIEGO-MONTGOMER_722903S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC7"
+  },
+  {
+    "state": "CA",
+    "latitude": 32.7,
+    "longitude": -117.2,
+    "location": "SAN-DIEGO-N-ISLAND-NAS",
+    "weather_file_name": "CA_SAN-DIEGO-N-ISLAND-NAS_722906S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC7"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.62,
+    "longitude": -122.36,
+    "location": "SAN-FRANCISCO-IAP",
+    "weather_file_name": "CA_SAN-FRANCISCO-IAP_724940S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC3"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.36,
+    "longitude": -121.92,
+    "location": "SAN-JOSE-IAP",
+    "weather_file_name": "CA_SAN-JOSE-IAP_724945S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC4"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.33,
+    "longitude": -121.82,
+    "location": "SAN-JOSE-REID-HILLV",
+    "weather_file_name": "CA_SAN-JOSE-REID-HILLV_724946S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC4"
+  },
+  {
+    "state": "CA",
+    "latitude": 35.24,
+    "longitude": -120.64,
+    "location": "SAN-LUIS-CO-RGNL",
+    "weather_file_name": "CA_SAN-LUIS-CO-RGNL_722897S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC5"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.29,
+    "longitude": -117.46,
+    "location": "SAN-MATEO-POINT",
+    "weather_file_name": "CA_SAN-MATEO-POINT_722928S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC7"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.24,
+    "longitude": -119.46,
+    "location": "SAN-NICHOLAS-ISLAND",
+    "weather_file_name": "CA_SAN-NICHOLAS-ISLAND_722910S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC6"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.74,
+    "longitude": -118.72,
+    "location": "SANDBERG",
+    "weather_file_name": "CA_SANDBERG_723830S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC16"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.68,
+    "longitude": -117.87,
+    "location": "SANTA-ANA-JOHN-WAYNE-AP",
+    "weather_file_name": "CA_SANTA-ANA-JOHN-WAYNE-AP_722977S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC6"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.43,
+    "longitude": -119.84,
+    "location": "SANTA-BARBARA-MUNI-AP",
+    "weather_file_name": "CA_SANTA-BARBARA-MUNI-AP_723925S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC6"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.41,
+    "longitude": -118.42,
+    "location": "SANTA-CATALINA-CATALINA-AP",
+    "weather_file_name": "CA_SANTA-CATALINA-CATALINA-AP_722920S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC6"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.9,
+    "longitude": -120.45,
+    "location": "SANTA-MARIA-PUBLIC-AP",
+    "weather_file_name": "CA_SANTA-MARIA-PUBLIC-AP_723940S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC5"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.02,
+    "longitude": -118.45,
+    "location": "SANTA-MONICA-MUNI",
+    "weather_file_name": "CA_SANTA-MONICA-MUNI_722885S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC6"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.5,
+    "longitude": -122.81,
+    "location": "SANTA-ROSA-AP",
+    "weather_file_name": "CA_SANTA-ROSA-AP_724957S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC2"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.61,
+    "longitude": -120.08,
+    "location": "SANTA-YNEZ",
+    "weather_file_name": "CA_SANTA-YNEZ_723762S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC5"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.08,
+    "longitude": -121.6,
+    "location": "SOUTH-CO-AP-OF-SANTA-CLARA",
+    "weather_file_name": "CA_SOUTH-CO-AP-OF-SANTA-CLARA_749484S_TYP8.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC4"
+  },
+  {
+    "state": "CA",
+    "latitude": 37.89,
+    "longitude": -121.23,
+    "location": "STOCKTON-METRO-AP",
+    "weather_file_name": "CA_STOCKTON-METRO-AP_724920S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12"
+  },
+  {
+    "state": "CA",
+    "latitude": 35.13,
+    "longitude": -118.44,
+    "location": "TEHACHAPI-MUNI",
+    "weather_file_name": "CA_TEHACHAPI-MUNI_749171S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC16"
+  },
+  {
+    "state": "CA",
+    "latitude": 33.8,
+    "longitude": -118.34,
+    "location": "TORRANCE-MUNI-AP",
+    "weather_file_name": "CA_TORRANCE-MUNI-AP_722955S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC6"
+  },
+  {
+    "state": "CA",
+    "latitude": 39.32,
+    "longitude": -120.14,
+    "location": "TRUCKEE-TAHOE",
+    "weather_file_name": "CA_TRUCKEE-TAHOE_725846S_TYP12.epw",
+    "climate_zone": "5B",
+    "cec_climate_zone": "CEC T24-CEC16"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.3,
+    "longitude": -116.17,
+    "location": "TWENTYNINE-PALMS",
+    "weather_file_name": "CA_TWENTYNINE-PALMS_690150S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC14"
+  },
+  {
+    "state": "CA",
+    "latitude": 39.13,
+    "longitude": -123.2,
+    "location": "UKIAH-MUNI-AP",
+    "weather_file_name": "CA_UKIAH-MUNI-AP_725905S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC2"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.35,
+    "longitude": -119.52,
+    "location": "USMC-MTN-WARFARE-TRAIN",
+    "weather_file_name": "CA_USMC-MTN-WARFARE-TRAIN_720652S_TYP12.epw",
+    "climate_zone": "6B",
+    "cec_climate_zone": "CEC T24-CEC16"
+  },
+  {
+    "state": "CA",
+    "latitude": 38.38,
+    "longitude": -121.96,
+    "location": "VACAVILLE-NUT-TREE",
+    "weather_file_name": "CA_VACAVILLE-NUT-TREE_724828S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC12"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.21,
+    "longitude": -118.49,
+    "location": "VAN-NUYS-AP",
+    "weather_file_name": "CA_VAN-NUYS-AP_722886S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC9"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.72,
+    "longitude": -120.57,
+    "location": "VANDENBERG-AFB",
+    "weather_file_name": "CA_VANDENBERG-AFB_723930S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC5"
+  },
+  {
+    "state": "CA",
+    "latitude": 36.32,
+    "longitude": -119.4,
+    "location": "VISALIA-MUNI-AP",
+    "weather_file_name": "CA_VISALIA-MUNI-AP_723896S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC13"
+  },
+  {
+    "state": "CA",
+    "latitude": 36.94,
+    "longitude": -121.79,
+    "location": "WATSONVILLE",
+    "weather_file_name": "CA_WATSONVILLE_745058S_TYP12.epw",
+    "climate_zone": "3C",
+    "cec_climate_zone": "CEC T24-CEC3"
+  },
+  {
+    "state": "CA",
+    "latitude": 34.26,
+    "longitude": -118.41,
+    "location": "WHITEMAN-AP",
+    "weather_file_name": "CA_WHITEMAN-AP_745057S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC9"
+  },
+  {
+    "state": "CA",
+    "latitude": 39.1,
+    "longitude": -121.57,
+    "location": "YUBA-CO",
+    "weather_file_name": "CA_YUBA-CO_724838S_TYP12.epw",
+    "climate_zone": "3B",
+    "cec_climate_zone": "CEC T24-CEC11"
+  }
+]

@@ -1,0 +1,183 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_hvac_with_ground_source_heat_pumps",
+  "name": "sce_replace_existing_hvac_with_ground_source_heat_pumps",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_hvac_with_ground_source_heat_pumps",
+  "uid": "40413a69-5df2-4ecf-b80a-e221c74f4038",
+  "uuid": "{40413a69-5df2-4ecf-b80a-e221c74f4038}",
+  "version_id": "ff7dbca8-d7e4-4318-9b77-aebd14f2c78a",
+  "version_uuid": "{ff7dbca8-d7e4-4318-9b77-aebd14f2c78a}",
+  "version_modified": "20220427T033827Z",
+  "xml_checksum": "740F4BDA",
+  "display_name": "SCE Replace Existing HVAC with Ground Source Heat Pumps",
+  "class_name": "SCEReplaceExistingHVACWithGroundSourceHeatPumps",
+  "description": "Replaces building HVAC systems with one of a selection of Ground-source heat pump configurations, with user-input cooling and heating rated efficiencies. A ground loop will be created to reject/obtain heat for water-source heat pumps that approximates a properly sized ground heat exchanger without requiring a detailed ground loop sizing simulation.",
+  "modeler_description": "The measure will remove all the existing building HVAC systems and replace them with the user-specified system. A ground-source heat pump will be added to each zone in the model. The option to add a dedicated outdoor air system (DOAS) will add one per floor to provide pre-conditioned ventilation air to the zones. DOAS cooling source can be either packaged DX or GSHP; DOAS heating source can be gas furnace, electric resistance, packaged DX (heat pump) or WSHP. User will be able to input efficiencies for DOAS cooilng and heating source, to be applied to all DOASs.\nThe GSHPs will reject heat to a common ground loop. The ground loop capacity will be approximated by a linear function of temperature difference across the loop – this measure does not specificlly size a ground loop. \nUser input of GSHP cooling and heating efficiency will be applied equally to all zone-level heat pumps added. \n",
+  "tags": [
+    "HVAC.Whole System"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    },
+    {
+      "name": "Intended Software Tool",
+      "display_name": "Intended Software Tool",
+      "value": "Apply Measure Now"
+    },
+    {
+      "name": "Intended Software Tool",
+      "display_name": "Intended Software Tool",
+      "value": "OpenStudio Application"
+    },
+    {
+      "name": "Intended Software Tool",
+      "display_name": "Intended Software Tool",
+      "value": "Parametric Analysis Tool"
+    },
+    {
+      "name": "Intended Use Case",
+      "display_name": "Intended Use Case",
+      "value": "New Construction EE"
+    },
+    {
+      "name": "Intended Use Case",
+      "display_name": "Intended Use Case",
+      "value": "Retrofit EE"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "template",
+      "display_name": "Target DEER Standard",
+      "description": "",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "DEER 2020",
+      "choice_values": [
+        "DEER Pre-1975",
+        "DEER 1985",
+        "DEER 1996",
+        "DEER 2003",
+        "DEER 2007",
+        "DEER 2011",
+        "DEER 2014",
+        "DEER 2015",
+        "DEER 2017",
+        "DEER 2020"
+      ],
+      "choice_display_names": [
+        "DEER Pre-1975",
+        "DEER 1985",
+        "DEER 1996",
+        "DEER 2003",
+        "DEER 2007",
+        "DEER 2011",
+        "DEER 2014",
+        "DEER 2015",
+        "DEER 2017",
+        "DEER 2020"
+      ]
+    },
+    {
+      "name": "doas",
+      "display_name": "Add Dedicated Outdoor Air System (DOAS)",
+      "description": "If selected, a Dedicated Outdoor Air System will be added per floor to precondition outside air delivered to the zones.",
+      "type": "Boolean",
+      "required": true,
+      "model_dependent": false,
+      "default_value": false
+    },
+    {
+      "name": "doas_cool",
+      "display_name": "Cooling Source for DOAS",
+      "description": "Sets the cooling source for the Dedicated Outside Air System.",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "No DOAS",
+      "choice_values": [
+        "WSHP",
+        "DX",
+        "No DOAS"
+      ],
+      "choice_display_names": [
+        "WSHP",
+        "DX",
+        "No DOAS"
+      ]
+    },
+    {
+      "name": "doas_cool_cop",
+      "display_name": "DOAS Cooling Source Rated COP",
+      "description": "This value will be applied to DOAS cooling equipment",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 3.0,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "doas_heat",
+      "display_name": "Heating Source for DOAS",
+      "description": "Sets the heating source for the Dedicated Outside Air System.",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "No DOAS",
+      "choice_values": [
+        "Gas Furnace",
+        "Electric Resistance",
+        "WSHP",
+        "Air Source Heat Pump",
+        "No DOAS"
+      ],
+      "choice_display_names": [
+        "Gas Furnace",
+        "Electric Resistance",
+        "WSHP",
+        "Air Source Heat Pump",
+        "No DOAS"
+      ]
+    },
+    {
+      "name": "doas_heat_cop",
+      "display_name": "DOAS Heating Source Rated Efficiency",
+      "description": "This value will be applied to DOAS heating equipment.\nFor gas furnace, enter a value less than 1 as furnace AFUE.\nFor Electric resistance, enter 1.0.\nFor WSHP/Air-source heat pump this is rated COP (>1).",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 1.0,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "cool_cop",
+      "display_name": "Ground-Source Heat Pump Cooling Rated COP",
+      "description": "This value will be applied to all zone-level GSHP equipment in cooling.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 3.0,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "heat_cop",
+      "display_name": "Ground-Source Heat Pump Heating Rated COP",
+      "description": "This value will be applied to all zone-level GSHP equipment in heating.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 3.0,
+      "min": 0.0,
+      "max": 6.0
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>sce_add_photovoltaic_with_electric_storage</name>
+  <uid>a7e9441c-65e2-47b0-af9e-53657de0adc9</uid>
+  <version_id>918d2b1b-22ed-404a-892f-90f88b201b3a</version_id>
+  <version_modified>20220203T165122Z</version_modified>
+  <xml_checksum>0806DB2D</xml_checksum>
+  <class_name>SCEAddPhotovoltaicWithElectricStorage</class_name>
+  <display_name>SCE Add Photovoltaic with Electric Storage</display_name>
+  <description>Adds photovoltaic generation and electric storage in the model and offers two methods of controlling storage charging and discharging: Facility Demand Leveling, or Scheduled Charge and Discharge</description>
+  <modeler_description>Adds a photovoltaic array for electric generation and simple electric storage in the model. Offers two methods of controlling storage charging and discharging. The PV array will be located on the exterior of the building. A fixed cell efficiency will be assigned in the model. A fraction of the array’s surface area with active cells will also be assigned in the model to account for periods in which there is cloud cover or shading. The PVs inverter will be sized equal to the rated PV array power. The inverter will use a simple fixed efficiency.</modeler_description>
+  <arguments>
+    <argument>
+      <name>pv_cap</name>
+      <display_name>The total system generating capacity in kilowatts</display_name>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>100</default_value>
+    </argument>
+    <argument>
+      <name>pv_mod_type</name>
+      <display_name>PV Module Type</display_name>
+      <description>PV system module type: &lt;br&gt;
+                               'Standard': typical poly- or mono-crystalline modules with efficiencies from 14-17%.&lt;br&gt;
+                               'Premium': monocrystalline silicon modules with anti-reflective coating and high efficiency (18-20%).&lt;br&gt;
+                               'ThinFilm': thin film modules with low temperature coefficient and low efficiency ~11%.</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Standard</default_value>
+      <choices>
+        <choice>
+          <value>Standard</value>
+          <display_name>Standard</display_name>
+        </choice>
+        <choice>
+          <value>Premium</value>
+          <display_name>Premium</display_name>
+        </choice>
+        <choice>
+          <value>ThinFilm</value>
+          <display_name>ThinFilm</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>pv_pos</name>
+      <display_name>PV Array Position Input Type</display_name>
+      <description>Enter the input type for PV panel position: &lt;br&gt;
+                          'Ideal' will calculate the panel tilt based on project (weather file) latitude.&lt;br&gt;
+                          'Specified' will use tilt value entered in 'Panel Tilt' argument below.</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Ideal</default_value>
+      <choices>
+        <choice>
+          <value>Ideal</value>
+          <display_name>Ideal</display_name>
+        </choice>
+        <choice>
+          <value>Specified</value>
+          <display_name>Specified</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>tilt</name>
+      <display_name>PV Panel Tilt Angle (deg)</display_name>
+      <description>Angle that the panel is tilted from horizontal (0° - horizontal; 90° - vertical).&lt;br&gt;Note: this argument only used if 'PV Array Position Input Type' = 'Specified'.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>0</default_value>
+    </argument>
+    <argument>
+      <name>stor_op</name>
+      <display_name>Battery Storage Control Mode</display_name>
+      <description>'Facility Demand Leveling' will attempt to control the facility's power demand dran from the utility service to a prescribed level. Scheduled will follow a user-input charging/discharging schedule.</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Facility Demand Leveling</default_value>
+      <choices>
+        <choice>
+          <value>Facility Demand Leveling</value>
+          <display_name>Facility Demand Leveling</display_name>
+        </choice>
+        <choice>
+          <value>Scheduled</value>
+          <display_name>Scheduled</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>demand_target</name>
+      <display_name>Utility Demand Target (kW)</display_name>
+      <description>If Storage Control Mode = 'Facility Demand Leveling', this sets the target facility demand for discharge control - battery will discharge to maintain this demand level.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>100</default_value>
+    </argument>
+    <argument>
+      <name>charge_hours</name>
+      <display_name>Battery Charge Hours</display_name>
+      <description>If Storage Control Mode = 'Scheduled', enter daily times for battery charging, using 24-hour format. Applies every day in the full run period.</description>
+      <type>String</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>HH:MM - HH:MM</default_value>
+    </argument>
+    <argument>
+      <name>stor_cap</name>
+      <display_name>Battery Storage Capacity (kWh)</display_name>
+      <description>Total energy storage capacity of battery. Default represents Tesla Powerwall 2.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>14</default_value>
+    </argument>
+    <argument>
+      <name>power</name>
+      <display_name>Battery Charge/Discharge Power (kW)</display_name>
+      <description>Maximum rate at which electrical power can be charged/discharged from the battery. Default represents Tesla Powerwall 2.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>5</default_value>
+    </argument>
+    <argument>
+      <name>tot_eff</name>
+      <display_name>Nominal 'round-trip' (charge and discharge) energetic efficiency.</display_name>
+      <description>Energetic efficiency from storing and drawing electricl energy from the battery. Values should be between 0.001 and 1.0. Model inputs for charing and discharging efficiency will be the square root of this total 'round-trip' value. Default value represents Tesla Powerwall 2.</description>
+      <type>Double</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>0.9</default_value>
+    </argument>
+  </arguments>
+  <outputs />
+  <provenances />
+  <tags>
+    <tag>Onsite Power Generation</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>ModelMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>LICENSE.md</filename>
+      <filetype>md</filetype>
+      <usage_type>license</usage_type>
+      <checksum>CD7F5672</checksum>
+    </file>
+    <file>
+      <filename>README.md.erb</filename>
+      <filetype>erb</filetype>
+      <usage_type>readmeerb</usage_type>
+      <checksum>F1C26127</checksum>
+    </file>
+    <file>
+      <filename>.gitkeep</filename>
+      <filetype>gitkeep</filetype>
+      <usage_type>doc</usage_type>
+      <checksum>00000000</checksum>
+    </file>
+    <file>
+      <filename>sce_add_photovoltaic_with_electric_storage_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>EF6A733B</checksum>
+    </file>
+    <file>
+      <filename>example_model.osm</filename>
+      <filetype>osm</filetype>
+      <usage_type>test</usage_type>
+      <checksum>53D14E69</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>3.3.0</identifier>
+        <min_compatible>3.3.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>A558FBAB</checksum>
+    </file>
+    <file>
+      <filename>create_run_model_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>BC24B4DC</checksum>
+    </file>
+    <file>
+      <filename>README.md</filename>
+      <filetype>md</filetype>
+      <usage_type>readme</usage_type>
+      <checksum>0B1DDC0E</checksum>
+    </file>
+  </files>
+</measure>

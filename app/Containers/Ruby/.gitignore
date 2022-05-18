@@ -1,0 +1,11 @@
+.bundle/install
+Gemfile.lock
+**/run/measures
+**/run/workflows
+**/run/analyses
+**/reports
+**/generated_files
+out.osw
+*/*/tests/output
+projects/*
+measures/output/*

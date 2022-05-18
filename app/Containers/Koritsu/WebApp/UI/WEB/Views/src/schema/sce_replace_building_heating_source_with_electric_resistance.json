@@ -1,0 +1,31 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_building_heating_source_with_electric_resistance",
+  "name": "sce_replace_building_heating_source_with_electric_resistance",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_building_heating_source_with_electric_resistance",
+  "uid": "a0d8a961-dc44-4d87-9d05-8732a2004dad",
+  "uuid": "{a0d8a961-dc44-4d87-9d05-8732a2004dad}",
+  "version_id": "980bd0f9-8fd6-4ba4-8d43-31b7507c3b82",
+  "version_uuid": "{980bd0f9-8fd6-4ba4-8d43-31b7507c3b82}",
+  "version_modified": "20220427T033804Z",
+  "xml_checksum": "1F3D2430",
+  "display_name": "SCE Replace Building Heating Source with Electric Resistance",
+  "class_name": "SCEReplaceBuildingHeatingSourceWithElectricResistance",
+  "description": "Replaces building fossil-fuel heating source with electric resistance heating.",
+  "modeler_description": "The measure will determine the existing heating source and replace it with a similar system utilizing electric resistance heating in place of fossil-fuel. If the existing HVAC utilizes hydronic heating with a gas boiler, the measure will replace the gas boiler with electric resistance. Similarly, a gas furnace in an RTU will be replaced with electric heating.",
+  "tags": [
+    "HVAC.Heating"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    }
+  ],
+  "arguments": [
+
+  ]
+}

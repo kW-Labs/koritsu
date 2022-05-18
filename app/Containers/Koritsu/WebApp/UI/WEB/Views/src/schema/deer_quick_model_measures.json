@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "id": "deer_quick_model_measures",
+  "type": "object",
+  "properties": {
+    "measures": {
+      "enum": [
+        "openstudio_results",
+        "koritsu_run_report",
+        "ChangeBuildingLocation",
+        "create_bar_from_building_type_ratios",
+        "create_typical_building_from_model",
+        "add_sce_tariffs",
+        "sce_environmental_impact_factors",
+        "sce_add_lcca_parameters_to_design_alternative"
+      ]
+    }
+  }
+}

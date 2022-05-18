@@ -1,0 +1,24 @@
+{
+  "project_id": "d3d3d77b-75d8-4c50-93f3-4339f8c81be2",
+	"project_name": "Test Project 1",
+  "weather_file_name": "USA_ID_Boise.Air.Terminal.726810_TMY3.epw",
+  "alternative_name": "alternative1",
+  "measures":[
+		{"name": "IncreaseInsulationRValueForExteriorWalls",
+			"arguments":{ 
+				"r_value": 30
+				}
+			},
+		{"name": "nze_hvac",
+			"arguments":{ 
+				"remove_existing_hvac": true
+				}
+			},
+		{"name": "openstudio_results",
+			"arguments": {}
+			}
+	]
+}
+
+
+

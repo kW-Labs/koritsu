@@ -1,0 +1,10 @@
+{ "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "title": "Project Types",
+  "description": "Available Projects Types",
+  "properties": {
+    "type": { "enum": ["deer_quick_model"]},
+    "label": {"enum": ["SCE Quick Model"]},
+    "weather": {"enum": ["weather_info_ca"]}
+  }
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>add_sce_tariffs</name>
+  <uid>193f3e3d-7c8b-40ca-9dd9-9ff99ad93a7f</uid>
+  <version_id>868e90c6-ab53-4db7-83fb-3f986a6bc320</version_id>
+  <version_modified>20210819T213312Z</version_modified>
+  <xml_checksum>F2191C38</xml_checksum>
+  <class_name>AddSCETariffs</class_name>
+  <display_name>add SCE tariffs</display_name>
+  <description>This measure will add pre defined tariffs from IDF files in the resrouce directory for this measure. Adapted from NREL \"Tariff Selection - Generic\" measure.</description>
+  <modeler_description>The measure works by cloning objects in from an external file into the current IDF file. Change functionality by changing the resource files. This measure may also adjust the simulation timestep.</modeler_description>
+  <arguments>
+    <argument>
+      <name>option</name>
+      <display_name>Select SCE TOU Tariff Option to Apply</display_name>
+      <description>The correct TOU rated will be applied based on building's peak demand</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Option D</default_value>
+      <choices>
+        <choice>
+          <value>Option D</value>
+          <display_name>Option D</display_name>
+        </choice>
+        <choice>
+          <value>Option E</value>
+          <display_name>Option E</display_name>
+        </choice>
+      </choices>
+    </argument>
+  </arguments>
+  <outputs />
+  <provenances />
+  <tags>
+    <tag>Economics.Life Cycle Cost Analysis</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Measure Type</name>
+      <value>EnergyPlusMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>LICENSE.md</filename>
+      <filetype>md</filetype>
+      <usage_type>license</usage_type>
+      <checksum>CD7F5672</checksum>
+    </file>
+    <file>
+      <filename>README.md.erb</filename>
+      <filetype>erb</filetype>
+      <usage_type>readmeerb</usage_type>
+      <checksum>F1C26127</checksum>
+    </file>
+    <file>
+      <filename>.gitkeep</filename>
+      <filetype>gitkeep</filetype>
+      <usage_type>doc</usage_type>
+      <checksum>00000000</checksum>
+    </file>
+    <file>
+      <filename>add_sce_tariffs_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>998593AD</checksum>
+    </file>
+    <file>
+      <filename>sce_usurdb.json</filename>
+      <filetype>json</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>2FEC6B4C</checksum>
+    </file>
+    <file>
+      <filename>sce_usurdb2.json</filename>
+      <filetype>json</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>8AD6B2E8</checksum>
+    </file>
+    <file>
+      <filename>SCE GS TOU Option D Rates.idf</filename>
+      <filetype>idf</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>FD98E163</checksum>
+    </file>
+    <file>
+      <filename>SCE GS TOU Option E Rates.idf</filename>
+      <filetype>idf</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>3BFB7DC4</checksum>
+    </file>
+    <file>
+      <filename>TEST1_TOU-GS-2 Option B.idf</filename>
+      <filetype>idf</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>4D1412A9</checksum>
+    </file>
+    <file>
+      <filename>TEST2_SCE GS TOU Option D Tariffs.idf</filename>
+      <filetype>idf</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>9B05A8A0</checksum>
+    </file>
+    <file>
+      <filename>README.md</filename>
+      <filetype>md</filetype>
+      <usage_type>readme</usage_type>
+      <checksum>810CA209</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>3.2.0</identifier>
+        <min_compatible>3.2.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>5511856C</checksum>
+    </file>
+    <file>
+      <filename>SCE GS TOU Option E Rates_test.idf</filename>
+      <filetype>idf</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>92EC82F2</checksum>
+    </file>
+    <file>
+      <filename>SCE GS TOU Option D Rates_test.idf</filename>
+      <filetype>idf</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>808646F9</checksum>
+    </file>
+  </files>
+</measure>

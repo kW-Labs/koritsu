@@ -1,0 +1,6 @@
+{ "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "id": "openstudio_results",
+  "properties": {
+  }
+}

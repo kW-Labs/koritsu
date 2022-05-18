@@ -1,0 +1,7 @@
+{ "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "id": "add_sce_tariffs",
+  "properties": {
+    "option": { "type": "string", "title": "sce_rate_type" }
+  }
+}

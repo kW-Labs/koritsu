@@ -1,0 +1,147 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/.bundle/install/ruby/2.7.0/gems/openstudio-ee-0.4.0/lib/measures/ReduceElectricEquipmentLoadsByPercentage",
+  "name": "reduce_electric_equipment_loads_by_percentage",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/.bundle/install/ruby/2.7.0/gems/openstudio-ee-0.4.0/lib/measures/ReduceElectricEquipmentLoadsByPercentage",
+  "uid": "0902e302-70db-4339-99b0-17f08bc93629",
+  "uuid": "{0902e302-70db-4339-99b0-17f08bc93629}",
+  "version_id": "88ee4fa0-fd92-4fe2-81f3-0246d7e0cb7d",
+  "version_uuid": "{88ee4fa0-fd92-4fe2-81f3-0246d7e0cb7d}",
+  "version_modified": "20211201T212133Z",
+  "xml_checksum": "F9A5B8F0",
+  "display_name": "Reduce Electric Equipment Loads by Percentage",
+  "class_name": "ReduceElectricEquipmentLoadsByPercentage",
+  "description": "Reduce Electric Equipment Loads by Percentage</display_name>\n  <description>Reduce electric equipment loads. This will affect equipment that have a, power, power per area (LPD), or power per person value. This can be applied to the entire building or a specific space type. A positive percentage represents an increase electric equipment power, while a negative percentage can be used for an increase in electric equipment power.",
+  "modeler_description": "Loop through all electric equipment objects in the specified space type or the entire building. Clone the definition if it has not already been cloned, rename and adjust the power based on the specified percentage. Link the new definition to the existing electric equipment instance. Loop through objects first in space types and then in spaces, but only for spaces that are in the specified space type, unless entire building has been chosen.",
+  "tags": [
+    "Equipment.Electric Equipment"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    },
+    {
+      "name": "Measure Function",
+      "display_name": "Measure Function",
+      "value": "Measure"
+    },
+    {
+      "name": "Requires EnergyPlus Results",
+      "display_name": "Requires EnergyPlus Results",
+      "value": false
+    },
+    {
+      "name": "Uses SketchUp API",
+      "display_name": "Uses SketchUp API",
+      "value": false
+    }
+  ],
+  "arguments": [
+    {
+      "name": "space_type",
+      "display_name": "Apply the Measure to a Specific Space Type or to the Entire Model",
+      "description": "",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "{f8f909a6-1010-4f25-b541-e3a626b09f48}",
+      "choice_values": [
+        "{f8f909a6-1010-4f25-b541-e3a626b09f48}"
+      ],
+      "choice_display_names": [
+        "*Entire Building*"
+      ]
+    },
+    {
+      "name": "elecequip_power_reduction_percent",
+      "display_name": "Electric Equipment Power Reduction",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "units": "%",
+      "default_value": 30.0,
+      "min": -100,
+      "max": 100
+    },
+    {
+      "name": "material_and_installation_cost",
+      "display_name": "Increase in Material and Installation Cost for Electric Equipment per Floor Area",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "units": "%",
+      "default_value": 0.0,
+      "min": -100
+    },
+    {
+      "name": "demolition_cost",
+      "display_name": "Increase in Demolition Costs for Electric Equipment per Floor Area",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "units": "%",
+      "default_value": 0.0,
+      "min": -100
+    },
+    {
+      "name": "years_until_costs_start",
+      "display_name": "Years Until Costs Start",
+      "description": "",
+      "type": "Integer",
+      "required": true,
+      "model_dependent": false,
+      "units": "whole years",
+      "default_value": 0,
+      "min": 0
+    },
+    {
+      "name": "demo_cost_initial_const",
+      "display_name": "Demolition Costs Occur During Initial Construction",
+      "description": "",
+      "type": "Boolean",
+      "required": true,
+      "model_dependent": false,
+      "default_value": false
+    },
+    {
+      "name": "expected_life",
+      "display_name": "Expected Life",
+      "description": "",
+      "type": "Integer",
+      "required": true,
+      "model_dependent": false,
+      "units": "whole years",
+      "default_value": 15,
+      "min": 1
+    },
+    {
+      "name": "om_cost",
+      "display_name": "Increase O & M Costs for Electric Equipment per Floor Area",
+      "description": "",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "units": "%",
+      "default_value": 0.0,
+      "min": -100
+    },
+    {
+      "name": "om_frequency",
+      "display_name": "O & M Frequency",
+      "description": "",
+      "type": "Integer",
+      "required": true,
+      "model_dependent": false,
+      "units": "whole years",
+      "default_value": 1,
+      "min": 1
+    }
+  ]
+}

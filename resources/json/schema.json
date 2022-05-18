@@ -1,0 +1,241 @@
+{ "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "title": "Koritsu Schema",
+  "description": "Schema for model input data for KW Koritsu",
+  "default": {},
+  "required":[
+    "project_name",
+    "bldg_type_a",
+    "total_bldg_floor_area",
+    "floor_height",
+    "wwr",
+    "system_type",
+     "location",
+     "state"
+  ],
+  "properties": {
+    "project_name":{
+      "type": "string",
+      "title": "Project Name",
+      "description": "The name of the building or project"
+    },
+      "weather_file_name":{
+      "type": "string",
+      "title": "Weather File",
+      "description": "The name of the weather file"
+    },
+      "state":{
+          "type": "string",
+          "title": "State",
+          "description": "",
+          "default": "Utah"
+      },
+    "location":{
+      "type": "string",
+      "title": "Location",
+      "description": "",
+      "default": "Utah"
+    },
+    "bldg_type_a":{
+      "type": "string",
+      "enum": ["SecondarySchool","PrimarySchool","SmallOffice","MediumOffice","LargeOffice","SmallHotel","LargeHotel","Warehouse","RetailStandalone","RetailStripmall","QuickServiceRestaurant","FullServiceRestaurant","MidriseApartment","HighriseApartment","Hospital","Outpatient","SuperMarket","Asm","DMo","ECC","EPr","ERC","ESe","EUn","GHs","Gro","Hsp","Htl","MBT","MFm","MLI","Mtl","Nrs","OfL","OfS","RFF","RSD","Rt3","RtL","RtS","SCn","SFm","SUn","WRf"],
+      "title": "Primary Building Type",
+      "description": "",
+      "default": "SmallOffice"
+    },
+    "bldg_type_b":{
+      "type": "string",
+      "enum": ["SecondarySchool","PrimarySchool","SmallOffice","MediumOffice","LargeOffice","SmallHotel","LargeHotel","Warehouse","RetailStandalone","RetailStripmall","QuickServiceRestaurant","FullServiceRestaurant","MidriseApartment","HighriseApartment","Hospital","Outpatient","SuperMarket","Asm","DMo","ECC","EPr","ERC","ESe","EUn","GHs","Gro","Hsp","Htl","MBT","MFm","MLI","Mtl","Nrs","OfL","OfS","RFF","RSD","Rt3","RtL","RtS","SCn","SFm","SUn","WRf"],
+      "title": "Building Type B",
+      "description": "",
+      "default": "SmallOffice"
+    },
+    "bldg_type_b_fract_bldg_area":{
+      "type": "number",
+      "title": "Building Type B Fraction of Building Floor Area",
+      "description": "",
+      "default": "0"
+    },
+    "bldg_type_c":{
+      "type": "string",
+      "enum": ["SecondarySchool","PrimarySchool","SmallOffice","MediumOffice","LargeOffice","SmallHotel","LargeHotel","Warehouse","RetailStandalone","RetailStripmall","QuickServiceRestaurant","FullServiceRestaurant","MidriseApartment","HighriseApartment","Hospital","Outpatient","SuperMarket","Asm","DMo","ECC","EPr","ERC","ESe","EUn","GHs","Gro","Hsp","Htl","MBT","MFm","MLI","Mtl","Nrs","OfL","OfS","RFF","RSD","Rt3","RtL","RtS","SCn","SFm","SUn","WRf"],
+      "title": "Building Type C",
+      "description": "",
+      "default": "SmallOffice"
+    },
+    "bldg_type_c_fract_bldg_area":{
+      "type": "number",
+      "title": "Building Type C Fraction of Building Floor Area",
+      "description": "",
+      "default": "0"
+    },
+    "bldg_type_d":{
+      "type": "string",
+      "enum": ["SecondarySchool","PrimarySchool","SmallOffice","MediumOffice","LargeOffice","SmallHotel","LargeHotel","Warehouse","RetailStandalone","RetailStripmall","QuickServiceRestaurant","FullServiceRestaurant","MidriseApartment","HighriseApartment","Hospital","Outpatient","SuperMarket","Asm","DMo","ECC","EPr","ERC","ESe","EUn","GHs","Gro","Hsp","Htl","MBT","MFm","MLI","Mtl","Nrs","OfL","OfS","RFF","RSD","Rt3","RtL","RtS","SCn","SFm","SUn","WRf"],
+      "title": "Building Type D",
+      "description": "",
+      "default": "SmallOffice"
+    },
+    "bldg_type_d_fract_bldg_area":{
+      "type": "number",
+      "title": "Building Type D Fraction of Building Floor Area",
+      "description": "",
+      "default": "0"
+    },
+    "total_bldg_floor_area":{
+      "type": "number",
+      "title": "Total Building Floor Area",
+      "description": "",
+      "default": "10000"
+    },
+    "floor_height":{
+      "type": "number",
+      "title": "Typical Floor to Floor Height",
+      "description": "Selecting a typical floor height of 0 will trigger a smart building type default.",
+      "default": "0"
+    },
+    "num_stories_above_grade":{
+      "type": "number",
+      "title": "Number of Stories Above Grade",
+      "description": "",
+      "default": "1"
+    },
+    "num_stories_below_grade":{
+      "type": "integer",
+      "title": "Number of Stories Below Grade",
+      "description": "",
+      "default": "0"
+    },
+    "building_rotation":{
+      "type": "number",
+      "title": "Building Rotation",
+      "description": "Set Building Rotation off of North (positive value is clockwise). Rotation applied after geometry generation. Values greater than +/- 45 will result in aspect ratio and party wall orientations that do not match cardinal directions of the inputs.",
+      "default": "0"
+    },
+    "template":{
+      "type": "string",
+      "enum": ["DOE Ref Pre-1980","DOE Ref 1980-2004","90.1-2004","90.1-2007","90.1-2010","90.1-2013","NREL ZNE Ready 2017","DEER Pre-1975","DEER 1985","DEER 1996","DEER 2003","DEER 2007","DEER 2011","DEER 2014","DEER 2015","DEER 2017","DEER 2020","DEER 2025","DEER 2030","DEER 2035","DEER 2040","DEER 2045","DEER 2050","DEER 2055","DEER 2060","DEER 2065","DEER 2070","DEER 2075"],
+      "title": "Target Standard",
+      "description": "",
+      "default": "90.1-2004"
+    },
+    "ns_to_ew_ratio":{
+      "type": "number",
+      "decimal": true,
+      "title": "Ratio of North/South Facade Length Relative to East/West Facade Length",
+      "description": "Selecting an aspect ratio of 0 will trigger a smart building type default. Aspect ratios less than one are not recommended for sliced bar geometry, instead rotate building and use a greater than 1 aspect ratio.",
+      "default": "0"
+    },
+    "perim_mult":{
+      "type": "number",
+      "title": "Perimeter Multiplier",
+      "description": "Selecting a value of 0 will trigger a smart building type default. This represents a multiplier for the building perimeter relative to the perimeter of a rectangular building that meets the area and aspect ratio inputs. Other than the smart default of 0.0 this argument should have a value of 1.0 or higher and is only applicable Multiple Space Types - Individual Stories Sliced division method.",
+      "default": "0"
+    },
+    "wwr":{
+      "type": "number",
+      "decimal": true,
+      "title": "Window to Wall Ratio",
+      "description": "Selecting a window to wall ratio of 0 will trigger a smart building type default.",
+      "default": "0"
+    },
+    "system_type":{
+      "type": "string",
+      "enum": ["Inferred","Ideal Air Loads","Baseboard electric","Baseboard gas boiler","Baseboard central air source heat pump","Baseboard district hot water","Direct evap coolers with baseboard electric","Direct evap coolers with baseboard gas boiler","Direct evap coolers with baseboard central air source heat pump","Direct evap coolers with baseboard district hot water","Direct evap coolers with forced air furnace","Direct evap coolers with gas unit heaters","Direct evap coolers with no heat","DOAS with fan coil chiller with boiler","DOAS with fan coil chiller with central air source heat pump","DOAS with fan coil chiller with district hot water","DOAS with fan coil chiller with baseboard electric","DOAS with fan coil chiller with gas unit heaters","DOAS with fan coil chiller with no heat","DOAS with fan coil air-cooled chiller with boiler","DOAS with fan coil air-cooled chiller with central air source heat pump","DOAS with fan coil air-cooled chiller with district hot water","DOAS with fan coil air-cooled chiller with baseboard electric","DOAS with fan coil air-cooled chiller with gas unit heaters","DOAS with fan coil air-cooled chiller with no heat","DOAS with fan coil district chilled water with boiler","DOAS with fan coil district chilled water with central air source heat pump","DOAS with fan coil district chilled water with district hot water","DOAS with fan coil district chilled water with baseboard electric","DOAS with fan coil district chilled water with gas unit heaters","DOAS with fan coil district chilled water with no heat","DOAS with VRF","DOAS with water source heat pumps fluid cooler with boiler","DOAS with water source heat pumps cooling tower with boiler","DOAS with water source heat pumps with ground source heat pump","DOAS with water source heat pumps district chilled water with district hot water","Fan coil chiller with boiler","Fan coil chiller with central air source heat pump","Fan coil chiller with district hot water","Fan coil chiller with baseboard electric","Fan coil chiller with gas unit heaters","Fan coil chiller with no heat","Fan coil air-cooled chiller with boiler","Fan coil air-cooled chiller with central air source heat pump","Fan coil air-cooled chiller with district hot water","Fan coil air-cooled chiller with baseboard electric","Fan coil air-cooled chiller with gas unit heaters","Fan coil air-cooled chiller with no heat","Fan coil district chilled water with boiler","Fan coil district chilled water with central air source heat pump","Fan coil district chilled water with district hot water","Fan coil district chilled water with baseboard electric","Fan coil district chilled water with gas unit heaters","Fan coil district chilled water with no heat","Forced air furnace","Gas unit heaters","PTAC with baseboard electric","PTAC with baseboard gas boiler","PTAC with baseboard district hot water","PTAC with gas unit heaters","PTAC with electric coil","PTAC with gas coil","PTAC with gas boiler","PTAC with central air source heat pump","PTAC with district hot water","PTAC with no heat","PTHP","PSZ-AC with baseboard electric","PSZ-AC with baseboard gas boiler","PSZ-AC with baseboard district hot water","PSZ-AC with gas unit heaters","PSZ-AC with electric coil","PSZ-AC with gas coil","PSZ-AC with gas boiler","PSZ-AC with central air source heat pump","PSZ-AC with district hot water","PSZ-AC with no heat","PSZ-AC district chilled water with baseboard electric","PSZ-AC district chilled water with baseboard gas boiler","PSZ-AC district chilled water with baseboard district hot water","PSZ-AC district chilled water with gas unit heaters","PSZ-AC district chilled water with electric coil","PSZ-AC district chilled water with gas coil","PSZ-AC district chilled water with gas boiler","PSZ-AC district chilled water with central air source heat pump","PSZ-AC district chilled water with district hot water","PSZ-AC district chilled water with no heat","PSZ-HP","PVAV with gas boiler reheat","PVAV with central air source heat pump reheat","PVAV with district hot water reheat","PVAV with PFP boxes","PVAV with gas heat with electric reheat","Residential AC with baseboard electric","Residential AC with baseboard gas boiler","Residential AC with baseboard central air source heat pump","Residential AC with baseboard district hot water","Residential AC with residential forced air furnace","Residential AC with no heat","Residential heat pump","Residential heat pump with no cooling","Residential forced air furnace","VAV chiller with gas boiler reheat","VAV chiller with central air source heat pump reheat","VAV chiller with district hot water reheat","VAV chiller with PFP boxes","VAV chiller with gas coil reheat","VAV chiller with no reheat with baseboard electric","VAV chiller with no reheat with gas unit heaters","VAV chiller with no reheat with zone heat pump","VAV air-cooled chiller with gas boiler reheat","VAV air-cooled chiller with central air source heat pump reheat","VAV air-cooled chiller with district hot water reheat","VAV air-cooled chiller with PFP boxes","VAV air-cooled chiller with gas coil reheat","VAV air-cooled chiller with no reheat with baseboard electric","VAV air-cooled chiller with no reheat with gas unit heaters","VAV air-cooled chiller with no reheat with zone heat pump","VAV district chilled water with gas boiler reheat","VAV district chilled water with central air source heat pump reheat","VAV district chilled water with district hot water reheat","VAV district chilled water with PFP boxes","VAV district chilled water with gas coil reheat","VAV district chilled water with no reheat with baseboard electric","VAV district chilled water with no reheat with gas unit heaters","VAV district chilled water with no reheat with zone heat pump","VRF","Water source heat pumps fluid cooler with boiler","Water source heat pumps cooling tower with boiler","Water source heat pumps with ground source heat pump","Water source heat pumps district chilled water with district hot water","Window AC with baseboard electric","Window AC with baseboard gas boiler","Window AC with baseboard central air source heat pump","Window AC with baseboard district hot water","Window AC with forced air furnace","Window AC with unit heaters","Window AC with no heat"],
+      "title": "HVAC System Type",
+      "description": "",
+      "default": "Inferred"
+    },
+    "hvac_delivery_type":{
+      "type": "string",
+      "enum": ["Forced Air","Hydronic"],
+      "title": "HVAC System Delivery Type",
+      "description": "How the HVAC system delivers heating or cooling to the zone.",
+      "default": "Forced Air"
+    },
+    "htg_src": {
+      "type": "string",
+      "enum": ["Electricity","NaturalGas","DistrictHeating","DistrictAmbient"],
+      "title": "HVAC Heating Source",
+      "description": "The primary source of heating used by HVAC systems in the model.",
+      "default": "NaturalGas"
+    },
+    "clg_src":{
+      "type": "string",
+      "enum": ["Electricity","DistrictCooling","DistrictAmbient"],
+      "title": "HVAC Cooling Source",
+      "description": "The primary source of cooling used by HVAC systems in the model.",
+      "default": "Electricity"
+    },
+    "swh_src":{
+      "type": "string",
+      "enum": ["Inferred","NaturalGas","Electricity","HeatPump"],
+      "title": "Service Water Heating Source",
+      "description": "The primary source of heating used by SWH systems in the model.",
+      "default": "Inferred"
+    },
+    "kitchen_makeup":{
+      "type": "string",
+      "enum": ["None","Largest Zone","Adjacent"],
+      "title": "Kitchen Exhaust MakeUp Air Calculation Method",
+      "description": "Determine logic to identify dining or cafe zones to provide makeup air to kitchen exhaust.",
+      "default": "Adjacent"
+    },
+    "exterior_lighting_zone":{
+      "type": "string",
+      "enum": ["0 - Undeveloped Areas Parks","1 - Developed Areas Parks","2 - Neighborhood","3 - All Other Areas","4 - High Activity"],
+      "title": "Exterior Lighting Zone",
+      "description": "Identify the Exterior Lighting Zone for the Building Site.",
+      "default": "3 - All Other Areas"
+    },
+    "onsite_parking_fraction":{
+      "type": "number",
+      "decimal": true,
+      "title": "Onsite Parking Fraction",
+      "description": "If set to 0 no exterior lighting for parking will be added",
+      "default": "1"
+    },
+    "modify_wkdy_op_hrs":{
+      "type": "boolean",
+      "title": "Modify weekday hours of operation",
+      "description": "Modify the weekday hours of operation in the model.",
+      "default": "false"
+    },
+    "wkdy_op_hrs_start_time":{
+      "type": "number",
+      "title": "Weekday Operating Hours Start Time",
+      "description": "Enter 24 hour values with fractional values converted to minutes. e.g. 17.25 = 5:15pm. Only used if Modify weekday hours of operation is true.",
+      "default": "8"
+    },
+    "wkdy_op_hrs_duration":{
+      "type": "number",
+      "title": "Weekday Operating Hours Duration",
+      "description": "Length of weekday operating hours. Enter 24 hour values with fractional values converted to minutes. e.g. 17.25 = 5:15pm. Only used if Modify weekday hours of operation is true.",
+      "default": "8"
+    },
+    "modify_wknd_op_hrs":{
+      "type": "boolean",
+      "title": "Modify weekend hours of operation",
+      "description": "Modify the weekend hours of operation in the model.",
+      "default": "false"
+    },
+    "wknd_op_hrs_start_time":{
+      "type": "number",
+      "title": "Weekend Operating Hours Start Time",
+      "description": "Enter 24 hour values with fractional values converted to minutes. e.g. 17.25 = 5:15pm.  Only used if Modify weekend hours of operation is true.",
+      "default": "8"
+    },
+    "wknd_op_hrs_duration":{
+      "type": "number",
+      "title": "Weekend Operating Hours Duration",
+      "description": "Length of weekend operating hours. Enter 24 hour values with fractional values converted to minutes. e.g. 17.25 = 5:15pm.  Only used if Modify weekend hours of operation is true.",
+      "default": "8"
+    },
+    "unmet_hours_tolerance":{
+      "type": "number",
+      "title": "Unmet Hours Tolerance",
+      "description": "Set the thermostat setpoint tolerance for unmet hours in degrees Rankine",
+      "default": "1"
+    }
+  }
+}

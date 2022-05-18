@@ -1,0 +1,16 @@
+{ "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "id": "create_bar_from_building_type_ratios",
+  "properties": {
+    "bldg_type_a": { "type": "string" },
+    "template": { "type": "string" },
+    "total_bldg_floor_area": { "type": "string" },
+    "floor_height": { "type": "string" },
+    "num_stories_above_grade": { "type": "string" },
+    "num_stories_below_grade": { "type": "string" },
+    "building_rotation": { "type": "string" },
+    "ns_to_ew_ratio": { "type": "string" },
+    "wwr": { "type": "string" },
+    "climate_zone": { "type": "string", "title": "cec_climate_zone" }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "apiato/webapp",
+    "description": "Web App for Koritus",
+    "type": "apiato-container",
+    "license": "MIT",
+    "require": {
+    },
+    "extra": {
+        "apiato": {
+            "container": {
+                "name": "WebApp"
+            }
+        }
+    }
+}

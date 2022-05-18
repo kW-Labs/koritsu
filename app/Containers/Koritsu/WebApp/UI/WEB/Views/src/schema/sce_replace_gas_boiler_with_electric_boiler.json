@@ -1,0 +1,31 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_gas_boiler_with_electric_boiler",
+  "name": "sce_replace_gas_boiler_with_electric_boiler",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_gas_boiler_with_electric_boiler",
+  "uid": "e877b7c8-aa9e-4913-9914-1d11070bdd57",
+  "uuid": "{e877b7c8-aa9e-4913-9914-1d11070bdd57}",
+  "version_id": "be362869-ebbf-4825-80d9-ffa49ba916d9",
+  "version_uuid": "{be362869-ebbf-4825-80d9-ffa49ba916d9}",
+  "version_modified": "20220427T033841Z",
+  "xml_checksum": "1F3D2430",
+  "display_name": "SCE Replace Gas Boiler with Electric Boiler",
+  "class_name": "SCEReplaceGasBoilerWithElectricBoiler",
+  "description": "Replace existing gas or fuel boiler with electric boiler.",
+  "modeler_description": "Replaces existing fossil-fuel hydronic heating source with electric resistance boiler with user-input efficiency. Replacement boiler will be controlled to the same leaving water temperature as the exisiting boiler, and auto-sized to meet the building load. If exisiting HVAC is not hydronic, the measure will do nothing.",
+  "tags": [
+    "HVAC.Heating"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    }
+  ],
+  "arguments": [
+
+  ]
+}

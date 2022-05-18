@@ -1,0 +1,49 @@
+{ "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "title": "DOE Prototype Schema",
+  "description": "Schema for model input data for DOE Prototype",
+  "default": {},
+  "required":[
+    "project_name",
+    "total_bldg_floor_area",
+    "building_type",
+    "template",
+    "climate_zone"
+  ],
+  "properties": {
+    "project_name":{
+      "type": "string",
+      "title": "Project Name",
+      "description": "The name of the building or project"
+    },
+    "total_bldg_floor_area": {
+      "type": "number",
+      "title": "Total Building Floor Area",
+      "description": "",
+      "default": "100000"
+    },
+    "building_type":{
+      "type": "string",
+      "enum": ["SecondarySchool", "PrimarySchool","SmallOffice", "MediumOffice", "LargeOffice", "SmallHotel", "LargeHotel", "Warehouse", "RetailStandalone", "RetailStripmall", "QuickServiceRestaurant", "FullServiceRestaurant", "MidriseApartment", "HighriseApartment", "Hospital", "Outpatient", "Laboratory", "LargeDataCenterHighITE", "LargeDataCenterLowITE", "SmallDataCenterHighITE", "SmallDataCenterLowITE"],
+      "title": "Building Type",
+      "description": "",
+      "default": "SmallOffice"
+    },
+
+    "template":{
+      "type": "string",
+      "enum": ["DOE Ref Pre-1980","DOE Ref 1980-2004","90.1-2004","90.1-2007","90.1-2010","90.1-2013"],
+      "title": "Template",
+      "description": "",
+      "default": "90.1-2010"
+    },
+    "climate_zone":{
+      "type": "string",
+      "enum": ["ASHRAE 169-2013-1A", "ASHRAE 169-2013-2A", "ASHRAE 169-2013-2B", "ASHRAE 169-2013-3A", "ASHRAE 169-2013-3B", "ASHRAE 169-2013-3C", "ASHRAE 169-2013-4A", "ASHRAE 169-2013-4B", "ASHRAE 169-2013-4C", "ASHRAE 169-2013-5A", "ASHRAE 169-2013-5B", "ASHRAE 169-2013-6A", "ASHRAE 169-2013-6B", "ASHRAE 169-2013-7A", "ASHRAE 169-2013-8A"],
+      "title": "Climate Zone",
+      "description": "",
+      "default": "ASHRAE 169-2013-2A"
+    }
+
+  }
+}

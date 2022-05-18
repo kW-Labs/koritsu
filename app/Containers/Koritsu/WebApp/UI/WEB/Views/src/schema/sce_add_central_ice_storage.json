@@ -1,0 +1,49 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_add_central_ice_storage",
+  "name": "sce_add_central_ice_storage",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_add_central_ice_storage",
+  "uid": "1b6adf08-a1a0-4c8a-a3b1-6cf9c1b1a672",
+  "uuid": "{1b6adf08-a1a0-4c8a-a3b1-6cf9c1b1a672}",
+  "version_id": "4f246cba-8c6b-4480-be49-8ab2cbaf7d22",
+  "version_uuid": "{4f246cba-8c6b-4480-be49-8ab2cbaf7d22}",
+  "version_modified": "20220427T033849Z",
+  "xml_checksum": "DC6E0CD2",
+  "display_name": "SCE Add Central Ice Storage",
+  "class_name": "SCEAddCentralIceStorage",
+  "description": "Adds an ice storage tank and controls to existing chilled water loop for the purpose of thermal energy storage.",
+  "modeler_description": "The measure allows users attach ice thermal energy storage (ITS) to an existing chilled water loop for the purpose of exploring load flexibility potential for a given building. ",
+  "tags": [
+    "HVAC.Energy Recovery"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "stor_cap",
+      "display_name": "Thermal Storage Capacity (ton-hours)",
+      "description": "Energy capacity of Ice thermal storage in ton-hours",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 300.0,
+      "min": 0.0
+    },
+    {
+      "name": "charge_hours",
+      "display_name": "Ice Tank Charge Hours",
+      "description": "Enter daily times for battery charging, using 24-hour format. Applies every day in the full run period.",
+      "type": "String",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "HH:MM - HH:MM"
+    }
+  ]
+}

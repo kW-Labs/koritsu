@@ -1,0 +1,230 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_hvac_with_water_source_heat_pumps",
+  "name": "sce_replace_existing_hvac_with_water_source_heat_pumps",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_hvac_with_water_source_heat_pumps",
+  "uid": "d608e77f-b8c8-42f3-83af-8eb1c3afd6d6",
+  "uuid": "{d608e77f-b8c8-42f3-83af-8eb1c3afd6d6}",
+  "version_id": "a2aac79c-38a8-4a15-8ea4-5785444f7a9d",
+  "version_uuid": "{a2aac79c-38a8-4a15-8ea4-5785444f7a9d}",
+  "version_modified": "20220427T033834Z",
+  "xml_checksum": "740F4BDA",
+  "display_name": "SCE Replace Existing HVAC with Water-Source Heat Pumps",
+  "class_name": "SCEReplaceExistingHVACWithWaterSourceHeatPumps",
+  "description": "Replaces building HVAC system with one of a selection of WSHP system configurations. System cooling and heating rated efficiency will be user inputs. Primary equipment (chiller/boiler, cooling tower, etc) efficiency will meet DEER parameters according to the user-entered DEER vintage",
+  "modeler_description": "The measure will remove all the existing building HVAC systems and replace them with the user-specifed system. A water-source heat pump will be added for each zone in the model. The option to add a dedicated outdoor air system (DOAS) will add one per floor to provide pre-conditioned ventilation air to the zones. DOAS cooling source can be either packaged DX or WSHP; DOAS heating source can be gas furnace, electric resistance, packaged DX (heat pump) or WSHP. User will be able to input efficiencies for DOAS cooling and heating source, to be applied to all DOASs.\nThe WSHPs will reject heat to a common condensing water loop. Options for loop heat rejection equipment include a variable-speed cooling tower or fluid cooler, options for heat addition equipment include gas boiler, electric resistance boiler or air-to-water heat pump. User will be able to specify heating source efficiency (percent for gas boiler, COP for Air to Water Heat Pump.\nUser input of WSHP cooling and heating efficiency will be applied equally to all zone-level heat pumps added.\n",
+  "tags": [
+    "HVAC.Whole System"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    },
+    {
+      "name": "Intended Software Tool",
+      "display_name": "Intended Software Tool",
+      "value": "Apply Measure Now"
+    },
+    {
+      "name": "Intended Software Tool",
+      "display_name": "Intended Software Tool",
+      "value": "OpenStudio Application"
+    },
+    {
+      "name": "Intended Software Tool",
+      "display_name": "Intended Software Tool",
+      "value": "Parametric Analysis Tool"
+    },
+    {
+      "name": "Intended Use Case",
+      "display_name": "Intended Use Case",
+      "value": "New Construction EE"
+    },
+    {
+      "name": "Intended Use Case",
+      "display_name": "Intended Use Case",
+      "value": "Retrofit EE"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "template",
+      "display_name": "Target DEER Standard",
+      "description": "",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "DEER 2020",
+      "choice_values": [
+        "DEER Pre-1975",
+        "DEER 1985",
+        "DEER 1996",
+        "DEER 2003",
+        "DEER 2007",
+        "DEER 2011",
+        "DEER 2014",
+        "DEER 2015",
+        "DEER 2017",
+        "DEER 2020"
+      ],
+      "choice_display_names": [
+        "DEER Pre-1975",
+        "DEER 1985",
+        "DEER 1996",
+        "DEER 2003",
+        "DEER 2007",
+        "DEER 2011",
+        "DEER 2014",
+        "DEER 2015",
+        "DEER 2017",
+        "DEER 2020"
+      ]
+    },
+    {
+      "name": "doas",
+      "display_name": "Add Dedicated Outdoor Air System (DOAS)",
+      "description": "If selected, a Dedicated Outdoor Air System will be added per floor to precondition outside air delivered to the zones.",
+      "type": "Boolean",
+      "required": true,
+      "model_dependent": false,
+      "default_value": false
+    },
+    {
+      "name": "doas_cool",
+      "display_name": "Cooling Source for DOAS",
+      "description": "Sets the cooling source for the Dedicated Outside Air System.",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "No DOAS",
+      "choice_values": [
+        "WSHP",
+        "DX",
+        "No DOAS"
+      ],
+      "choice_display_names": [
+        "WSHP",
+        "DX",
+        "No DOAS"
+      ]
+    },
+    {
+      "name": "doas_cool_cop",
+      "display_name": "DOAS Cooling Source Rated COP",
+      "description": "This value will be applied to DOAS cooling equipment",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 3.0,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "doas_heat",
+      "display_name": "Heating Source for DOAS",
+      "description": "Sets the heating source for the Dedicated Outside Air System.",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "No DOAS",
+      "choice_values": [
+        "Gas Furnace",
+        "Electric Resistance",
+        "WSHP",
+        "Air Source Heat Pump",
+        "No DOAS"
+      ],
+      "choice_display_names": [
+        "Gas Furnace",
+        "Electric Resistance",
+        "WSHP",
+        "Air Source Heat Pump",
+        "No DOAS"
+      ]
+    },
+    {
+      "name": "doas_heat_cop",
+      "display_name": "DOAS Heating Source Rated Efficiency",
+      "description": "This value will be applied to DOAS heating equipment.\nFor gas furnace, enter a value less than 1 as furnace AFUE.\nFor Electric resistance, enter 1.0.\nFor WSHP/Air-source heat pump this is rated COP (>1).",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 1.0,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "loop_cool",
+      "display_name": "WSHP Loop Heat Rejection Equipment",
+      "description": "Type of equipment used to reject heat from the WSHP water loop",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "Cooling Tower",
+      "choice_values": [
+        "Cooling Tower",
+        "Fluid Cooler"
+      ],
+      "choice_display_names": [
+        "Cooling Tower",
+        "Fluid Cooler"
+      ]
+    },
+    {
+      "name": "loop_heat",
+      "display_name": "WSHP Loop Heating Equipment",
+      "description": "Type of equipment used to add heat to the WSHP water loop",
+      "type": "Choice",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "Gas Boiler",
+      "choice_values": [
+        "Gas Boiler",
+        "Electric Boiler",
+        "Central Air-Water Heat Pump"
+      ],
+      "choice_display_names": [
+        "Gas Boiler",
+        "Electric Boiler",
+        "Central Air-Water Heat Pump"
+      ]
+    },
+    {
+      "name": "loop_heat_cop",
+      "display_name": "WSHP Heating Source Rated Efficiency",
+      "description": "This value will be applied to WSHP loop heating equipment.\nFor gas boiler, enter a value less than 1 as boiler thermal efficiency.\nFor Electric boiler, enter 1.0.\nFor Central Air-water heat pump this is rated COP (>1).",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 1.0,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "cool_cop",
+      "display_name": "Water-Source Heat Pump Cooling Rated COP",
+      "description": "This value will be applied to all zone-level WSHP equipment in cooling.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 3.0,
+      "min": 0.0,
+      "max": 6.0
+    },
+    {
+      "name": "heat_cop",
+      "display_name": "Heat Pump Heating Rated COP",
+      "description": "This value will be applied to all zone-level WSHP equipment in heating.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 3.0,
+      "min": 0.0,
+      "max": 6.0
+    }
+  ]
+}

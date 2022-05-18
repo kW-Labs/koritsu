@@ -1,0 +1,360 @@
+ERROR Cannot find current Workflow Step
+ERROR Cannot find current Workflow Step
+ERROR Cannot find current Workflow Step
+ERROR Cannot find current Workflow Step
+INFO  Using OpenStudio Standards version 0.2.15 with template DEER 2015.
+INFO  Loading OpenStudio Standards data for DEER 2015
+INFO  OfS Shared Service Water Loop is used for SHW or refrigeration heat reclaim and will not be removed.
+INFO  Adding heat pump loop.
+INFO  Adding DOAS system for 12 zones.
+INFO  Adding zone water-to-air heat pump.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilHeatingWaterToAirHeatPumpEquationFit::heatingPowerConsumptionCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::totalCoolingCapacityCurve().setCoefficient5z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient2v(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient3w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient4x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient5y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::sensibleCoolingCapacityCurve().setCoefficient6z(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient1Constant(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient2w(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient3x(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient4y(double) instead.
+WARN  This method is deprecated. Use CoilCoolingWaterToAirHeatPumpEquationFit::coolingPowerConsumptionCurve().setCoefficient5z(double) instead.
+INFO  Set sizing factors to 1.25 for heating and 1.15 for cooling.
+INFO  Running simulation /home/edr/koritsu-www/app/Containers/Ruby/measures/sce_replace_existing_hvac_with_water_source_heat_pumps/tests/output/SR.
+INFO  Finished run.
+WARN  Using EnergyPlusVersion version 9.6.0 which should have 'Year' field, but it's always zero
+INFO  Started applying multizone vav OA sizing.
+INFO  Finished applying multizone vav OA sizing.
+INFO  For Story Ground DOAS: Allowable brake horsepower = 4.0HP based on 4259 cfm and 0.0 bhp of adjustment.
+INFO  For DOAS Exhaust Fan: motor nameplate = 3HP, motor eff = 89.5%.
+INFO  For DOAS Exhaust Fan: pressure rise = 1.9 in w.c., power = 2.24HP.
+INFO  For DOAS Supply Fan: motor nameplate = 3HP, motor eff = 89.5%.
+INFO  For DOAS Supply Fan: pressure rise = 1.9 in w.c., power = 2.24HP.
+INFO  For Zone OfS Hall A  - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS Hall A  - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Zone OfS Hall A end_b - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS Hall A end_b - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Zone OfS Hall B  - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS Hall B  - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Zone OfS Hall B end_b - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS Hall B end_b - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Zone OfS Hall C  - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS Hall C  - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Zone OfS Hall C end_b - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS Hall C end_b - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Zone OfS OfficeSmall A  - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall A  - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Zone OfS OfficeSmall A end_a - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall A end_a - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Zone OfS OfficeSmall B  - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall B  - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Zone OfS OfficeSmall B end_a - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall B end_a - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Zone OfS OfficeSmall C  - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall C  - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Zone OfS OfficeSmall C end_a - Story Ground WSHP Fan: motor eff = 85.5%; assumed to represent several less than 1 HP motors.
+INFO  For Zone OfS OfficeSmall C end_a - Story Ground WSHP: fan efficacy set to 0.3 W/cfm.
+INFO  For Heat Pump Loop Pump: motor nameplate = 3HP, motor eff = 89.5%; 19 W/gpm translates to a pressure rise of 70.34 ftH2O.
+INFO  For Heat Pump Loop, serves 0 ft^2.
+INFO  For Heat Pump Loop, pump type is Riding Curve.

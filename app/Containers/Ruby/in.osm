@@ -1,0 +1,10 @@
+
+OS:Version,
+  {4564731e-5d1d-447f-9cfe-035457fe4195}, !- Handle
+  3.1.0;                                  !- Version Identifier
+
+OS:YearDescription,
+  {a4408cf5-b1d4-4f96-af5b-12048cab6840}, !- Handle
+  ,                                       !- Calendar Year
+  Sunday;                                 !- Day of Week for Start Day
+

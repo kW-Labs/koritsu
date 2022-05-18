@@ -1,0 +1,59 @@
+{
+  "measure_dir": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_add_chilled_water_storage",
+  "name": "sce_add_chilled_water_storage",
+  "directory": "/home/edr/koritsu-www/app/Containers/Ruby/measures/sce_add_chilled_water_storage",
+  "uid": "38a81e9d-e6b4-4a08-99a1-811b14cc5fec",
+  "uuid": "{38a81e9d-e6b4-4a08-99a1-811b14cc5fec}",
+  "version_id": "f94c89b8-98d3-4f1e-8d95-33b79146c05d",
+  "version_uuid": "{f94c89b8-98d3-4f1e-8d95-33b79146c05d}",
+  "version_modified": "20220427T033858Z",
+  "xml_checksum": "DC6E0CD2",
+  "display_name": "SCE Add Chilled Water Storage",
+  "class_name": "SCEAddChilledWaterStorage",
+  "description": "This measure adds a chilled water thermal energy storage tank to the model for the purpose load shifting.",
+  "modeler_description": "The measure allows users attach chilled water thermal energy storage (CWTS) to an existing chilled water loop for the purpose of exploring load flexibility potential for a given building. The baseline chilled water loop will be split into a 'primary' and 'secondary' loop, with the primary loop contiaing the existing chiller (hardsized to maintain baseline sizing) on the supply side and a ThermalStorage:ChilledWater:Stratified on the demand side. The secondary loop contains the chilled water tank on the supply side and existing chilled water coils on the demand side. The chilled water tank is modeled as a vertical cylinder with minimal surface area for a given tank volume. Tank is assumed to be exposed to ambient conditions, with a surface U-value of 0.5 W/m^2*K",
+  "tags": [
+    "HVAC.Energy Recovery"
+  ],
+  "outputs": [
+
+  ],
+  "attributes": [
+    {
+      "name": "Measure Type",
+      "display_name": "Measure Type",
+      "value": "ModelMeasure"
+    }
+  ],
+  "arguments": [
+    {
+      "name": "tank_vol",
+      "display_name": "Chilled Water Storage Tank Volume (ft^3)",
+      "description": "Storage volume of chilled water tank in cubic feet.",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 2000.0,
+      "min": 0.0
+    },
+    {
+      "name": "stor_cap",
+      "display_name": "Chilled Water Storage Cooling Capacity (tons)",
+      "description": "Cooling capacity of chilled water thermal storage tank in tons",
+      "type": "Double",
+      "required": true,
+      "model_dependent": false,
+      "default_value": 300.0,
+      "min": 0.0
+    },
+    {
+      "name": "charge_hours",
+      "display_name": "Storage Charge Hours",
+      "description": "Enter daily times for battery charging, using 24-hour format. Applies every day in the full run period.",
+      "type": "String",
+      "required": true,
+      "model_dependent": false,
+      "default_value": "HH:MM - HH:MM"
+    }
+  ]
+}
